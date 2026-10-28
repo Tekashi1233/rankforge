@@ -1,0 +1,4 @@
+User-agent: *
+Allow:
+
+Sitemap: https://rankforgetool.com/sitemap.xml
