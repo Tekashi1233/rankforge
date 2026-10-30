@@ -66,3 +66,6 @@ footer .logo{color:#fff;margin-bottom:12px}
 @media(max-width:860px){.grid{grid-template-columns:1fr 1fr}.tool{grid-template-columns:1fr}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.nl{display:none}.nl.open{display:flex;flex-direction:column;gap:14px;position:absolute;top:64px;left:0;right:0;background:#fff;padding:18px 20px;border-bottom:1px solid var(--l)}#mb{display:block}.hero{padding:52px 0 56px}.stats{grid-template-columns:1fr 1fr}}
 .art{max-width:760px}.art h2{font-size:24px;margin:28px 0 8px}.art p{color:#3c4863;font-size:16.5px;margin-bottom:14px}.art ul,.art ol{padding-left:22px;margin-bottom:14px;color:#3c4863}.art li{margin-bottom:6px}.meta{color:#8b97b0;font-size:14px;margin-bottom:20px}
+
+/* SEO fix: semantic h1 that keeps the previous h2 page-title size */
+.t2{font-size:24px;font-weight:800;letter-spacing:-1px;line-height:1.25;margin:0 0 8px}

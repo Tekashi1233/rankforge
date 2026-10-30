@@ -1,0 +1,6 @@
+# Cloudflare Pages: force HTTPS and send www to the apex domain.
+# If rankforgetool.com is not a Cloudflare Pages project, use a Cloudflare
+# Redirect Rule instead (Cloudflare dashboard > Rules > Redirect Rules).
+https://www.rankforgetool.com/*  https://rankforgetool.com/:splat  301
+http://rankforgetool.com/*      https://rankforgetool.com/:splat  301
+http://www.rankforgetool.com/*  https://rankforgetool.com/:splat  301
