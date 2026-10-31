@@ -1,0 +1,33 @@
+# RankForge
+
+> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, and AI readiness checker. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
+
+RankForge is privacy-first: nothing users type is sent to a server. All tools work on mobile and desktop.
+
+## Tools
+
+- [Meta Tag Generator](https://rankforgetool.com/tools/meta-tag-generator): Create title, description and Open Graph tags with a live Google preview
+- [Word & Character Counter](https://rankforgetool.com/tools/word-counter): Count words, characters, sentences and estimate reading time
+- [Slug Generator](https://rankforgetool.com/tools/slug-generator): Turn any title into a clean SEO-friendly URL slug
+- [Robots.txt Generator](https://rankforgetool.com/tools/robots-txt-generator): Build crawl rules and download a robots.txt file
+- [Keyword Density Checker](https://rankforgetool.com/tools/keyword-density-checker): See the most used words and their share of the text
+- [Readability Score Checker](https://rankforgetool.com/tools/readability-score-checker): Get Flesch Reading Ease score and grade level
+- [Text Case Converter](https://rankforgetool.com/tools/text-case-converter): Convert text to upper, lower, title or sentence case
+- [Password Generator](https://rankforgetool.com/tools/password-generator): Create strong random passwords in the browser
+- [Lorem Ipsum Generator](https://rankforgetool.com/tools/lorem-ipsum-generator): Generate placeholder text for designs
+- [AI Readiness Checker](https://rankforgetool.com/tools/ai-readiness-checker): Check how ready a page is for AI search answers
+
+## Guides
+
+- [What Is GEO?](https://rankforgetool.com/blog/what-is-geo-generative-engine-optimization): Beginner guide to Generative Engine Optimization
+- [What Is a Readability Score?](https://rankforgetool.com/blog/what-is-readability-score-and-why-it-matters-for-seo): Why readability matters for SEO and AI search
+- [What Is SEO and How Does It Work?](https://rankforgetool.com/blog/what-is-seo-and-how-does-it-work): Plain-English explanation of search engine optimization
+- [How to Do Keyword Research for Free](https://rankforgetool.com/blog/how-to-do-keyword-research-for-free): Find keywords without paid tools
+- [On-Page SEO Checklist](https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners): Practical checklist for beginners
+
+## Optional
+
+- [About](https://rankforgetool.com/about): What RankForge is and who it is for
+- [All Tools](https://rankforgetool.com/tools): Full list of free SEO tools
+- [Blog](https://rankforgetool.com/blog): All SEO and GEO guides
+- [Contact](https://rankforgetool.com/contact): Get in touch
