@@ -3,7 +3,51 @@
 <label>Default rule for all bots</label><select id="rd"><option value="a">Allow everything</option><option value="b">Block everything</option></select>
 <label>Paths to block (one per line)</label><textarea id="rp" placeholder="/admin/&#10;/private/"></textarea>
 <label>Sitemap URL (optional)</label><input id="rs" placeholder="https://example.com/sitemap.xml">
-</div><div class="box"><b>Your robots.txt</b><pre id="ro" style="margin-top:10px"></pre><button class="btn" data-copy="ro">Copy</button> <button class="btn g" id="rdl">Download file</button></div></div><div class="art" style="max-width:none;margin-top:28px"><h2>How to use the Robots.txt Generator</h2><p>Choose whether crawlers may access your site, list private folders to block, add your sitemap address, then download the file. Upload robots.txt to your site root so it opens at yourdomain.com/robots.txt. Never block pages you want to appear in search.</p><h2>Frequently asked questions</h2><details><summary>Where do I put robots.txt?</summary><p>In your site root, so it opens at yourdomain.com/robots.txt.</p></details><details><summary>Does robots.txt hide pages from Google?</summary><p>Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results.</p></details><details><summary>Should I add my sitemap?</summary><p>Yes. Adding a Sitemap line helps crawlers find all your pages.</p></details><h2>Read the guide</h2><p><a href="../blog/what-is-robots-txt-and-how-to-create-one">What Is a Robots.txt File and How to Create One</a></p><h2>More free tools</h2><p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="word-counter">Word & Character Counter</a> · <a href="slug-generator">Slug Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a> · <a href="text-case-converter">Text Case Converter</a> · <a href="password-generator">Password Generator</a> · <a href="lorem-ipsum-generator">Lorem Ipsum Generator</a></p></div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do I put robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "In your site root, so it opens at yourdomain.com/robots.txt."}}, {"@type": "Question", "name": "Does robots.txt hide pages from Google?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results."}}, {"@type": "Question", "name": "Should I add my sitemap?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adding a Sitemap line helps crawlers find all your pages."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href=".">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
+</div><div class="box"><b>Your robots.txt</b><pre id="ro" style="margin-top:10px"></pre><button class="btn" data-copy="ro">Copy</button> <button class="btn g" id="rdl">Download file</button></div></div><div class="art" style="max-width:none;margin-top:28px">
+<h2>What is a robots.txt file?</h2>
+<p>robots.txt is a plain-text file placed in the root of a website that tells search engine crawlers which parts of the site they may or may not access. It follows the Robots Exclusion Protocol. When a crawler arrives at a domain, it first requests /robots.txt and reads the rules before deciding which pages to fetch. The file cannot force a crawler to obey (malicious bots often ignore it), but major search engines such as Google, Bing, and others respect it.</p>
+
+<h2>Why robots.txt is important for SEO and site management</h2>
+<p>A well-written robots.txt helps you:</p>
+<ul>
+<li>Keep private or thin pages (admin areas, thank-you pages, staging sections, internal search results) out of the crawl budget.</li>
+<li>Prevent indexing of duplicate or low-value parameter URLs that can dilute ranking signals.</li>
+<li>Point crawlers to your XML sitemap so they discover important pages faster.</li>
+<li>Reduce server load by blocking unnecessary paths.</li>
+</ul>
+<p>It is not a security tool. Sensitive content should be protected with authentication or proper noindex directives. robots.txt only gives polite instructions to well-behaved crawlers.</p>
+
+<h2>How to use this Robots.txt Generator</h2>
+<p>1. Choose the default rule: “Allow everything” (most common for public sites) or “Block everything” (useful for staging sites or temporary blocks).<br>
+2. List any specific paths you want to disallow, one per line (for example /admin/ or /private/).<br>
+3. Optionally add the full URL of your sitemap.<br>
+4. Copy the generated text or download the file as robots.txt.<br>
+5. Upload the file to the root directory of your website so it is reachable at https://yoursite.com/robots.txt.</p>
+
+<h2>How to interpret and test the results</h2>
+<p>After uploading, open the file in a browser to confirm it is publicly accessible. Then use Google Search Console’s robots.txt Tester (or the URL Inspection tool) to verify that important pages are still allowed and that blocked paths are correctly excluded. Remember that blocking a page in robots.txt does not remove it from the index if other sites link to it. To keep a page out of search results, combine robots.txt with a noindex meta tag or HTTP header.</p>
+
+<h2>Common mistakes to avoid</h2>
+<ul>
+<li>Blocking CSS, JavaScript, or image folders that Google needs to render the page correctly.</li>
+<li>Using robots.txt as the only method to hide sensitive content.</li>
+<li>Forgetting to add a Sitemap line, which slows discovery of new pages.</li>
+<li>Leaving a “Disallow: /” rule on a live production site by accident.</li>
+<li>Creating syntax errors (missing spaces, incorrect capitalization of User-agent or Disallow).</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>Where do I put robots.txt?</summary><p>In your site root, so it opens at yourdomain.com/robots.txt.</p></details>
+<details><summary>Does robots.txt hide pages from Google?</summary><p>Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results.</p></details>
+<details><summary>Should I add my sitemap?</summary><p>Yes. Adding a Sitemap line helps crawlers find all your pages.</p></details>
+<details><summary>Can robots.txt improve rankings directly?</summary><p>Indirectly. By focusing crawl budget on important pages and preventing indexation of low-value URLs, it supports cleaner indexing and better overall site quality signals.</p></details>
+
+<h2>Read the guide</h2>
+<p><a href="../blog/what-is-robots-txt-and-how-to-create-one">What Is a Robots.txt File and How to Create One</a></p>
+
+<h2>More free tools</h2>
+<p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="word-counter">Word & Character Counter</a> · <a href="slug-generator">Slug Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a> · <a href="text-case-converter">Text Case Converter</a> · <a href="password-generator">Password Generator</a> · <a href="lorem-ipsum-generator">Lorem Ipsum Generator</a></p>
+</div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do I put robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "In your site root, so it opens at yourdomain.com/robots.txt."}}, {"@type": "Question", "name": "Does robots.txt hide pages from Google?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results."}}, {"@type": "Question", "name": "Should I add my sitemap?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adding a Sitemap line helps crawlers find all your pages."}}, {"@type": "Question", "name": "Can robots.txt improve rankings directly?", "acceptedAnswer": {"@type": "Answer", "text": "Indirectly. By focusing crawl budget on important pages and preventing indexation of low-value URLs, it supports cleaner indexing and better overall site quality signals."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href=".">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
 document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(!b)return;var tx=$(b.dataset.copy).textContent,o=b.textContent;
  (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
  b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
