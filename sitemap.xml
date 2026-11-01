@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://rankforgetool.com/</loc><lastmod>2026-11-02</lastmod></url>
-<url><loc>https://rankforgetool.com/tools</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://rankforgetool.com/tools</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://rankforgetool.com/blog</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://rankforgetool.com/about</loc></url>
 <url><loc>https://rankforgetool.com/contact</loc></url>
@@ -13,6 +13,7 @@
 <url><loc>https://rankforgetool.com/tools/word-counter</loc></url>
 <url><loc>https://rankforgetool.com/tools/slug-generator</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://rankforgetool.com/tools/robots-txt-generator</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://rankforgetool.com/tools/llms-txt-generator</loc><lastmod>2026-11-02</lastmod></url>
 <url><loc>https://rankforgetool.com/tools/keyword-density-checker</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://rankforgetool.com/tools/readability-score-checker</loc></url>
 <url><loc>https://rankforgetool.com/tools/text-case-converter</loc></url>
