@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>XML Sitemap Generator - Free Online Tool | RankForge</title><meta name="description" content="Paste your page URLs and generate a valid XML sitemap.xml with optional lastmod, priority and changefreq. Free, no sign-up, runs entirely in your browser."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../style.css"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="icon" href="../favicon.png" type="image/png"><link rel="apple-touch-icon" href="../favicon.png"><link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml"><link rel="canonical" href="https://rankforgetool.com/tools/xml-sitemap-generator"><meta property="og:type" content="website"><meta property="og:site_name" content="RankForge"><meta property="og:locale" content="en_US"><meta property="og:title" content="XML Sitemap Generator - Free Online Tool | RankForge"><meta property="og:description" content="Paste your page URLs and generate a valid XML sitemap.xml with optional lastmod, priority and changefreq. Free, no sign-up, runs entirely in your browser."><meta property="og:url" content="https://rankforgetool.com/tools/xml-sitemap-generator"><meta property="og:image" content="https://rankforgetool.com/og-cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="XML Sitemap Generator - Free Online Tool | RankForge"><meta name="twitter:description" content="Paste your page URLs and generate a valid XML sitemap.xml with optional lastmod, priority and changefreq. Free, no sign-up, runs entirely in your browser."><meta name="twitter:image" content="https://rankforgetool.com/og-cover.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://rankforgetool.com/tools"},{"@type":"ListItem","position":3,"name":"XML Sitemap Generator","item":"https://rankforgetool.com/tools/xml-sitemap-generator"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"XML Sitemap Generator","url":"https://rankforgetool.com/tools/xml-sitemap-generator","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","browserRequirements":"Requires JavaScript","description":"Paste your page URLs and generate a valid XML sitemap.xml with optional lastmod, priority and changefreq. Free, no sign-up, runs entirely in your browser.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"RankForge","url":"https://rankforgetool.com/"}}</script></head><body><nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href=".">Tools</a></li><li><a href="../blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav><main><div class="pg"><div class="c"><h1 class="t2">XML Sitemap Generator</h1><p class="lead">Paste your page URLs (one per line) and generate a valid sitemap.xml ready to upload and submit to Google Search Console.</p>
+<div class="tool"><div class="box">
+<label>Page URLs (one per line) <span class="cnt" id="uc">0 URLs</span></label><textarea id="urls" placeholder="https://example.com/&#10;https://example.com/about&#10;https://example.com/blog/post-title" style="min-height:180px"></textarea>
+<label>Default last modified date</label><input type="date" id="lastmod" value="2026-11-03">
+<label>Default priority (0.0–1.0)</label><input type="number" id="priority" min="0" max="1" step="0.1" value="0.8">
+<label>Default change frequency</label><select id="changefreq"><option value="">(none)</option><option value="always">always</option><option value="hourly">hourly</option><option value="daily">daily</option><option value="weekly" selected>weekly</option><option value="monthly">monthly</option><option value="yearly">yearly</option><option value="never">never</option></select>
+</div><div class="box"><b>Your sitemap.xml</b><pre id="out" style="margin-top:10px;max-height:320px;overflow:auto"></pre><button class="btn" data-copy="out">Copy XML</button> <button class="btn g" id="dl">Download sitemap.xml</button></div></div><div class="art" style="max-width:none;margin-top:28px">
+<h2>What is an XML sitemap?</h2>
+<p>An XML sitemap is a file that lists the URLs on your website you want search engines to know about. It follows the standard at sitemaps.org. Search engines such as Google and Bing read the file to discover pages they might otherwise miss, especially on new sites, large sites, or sites with thin internal linking. A sitemap does not guarantee that every listed URL will be crawled or indexed, but it is one of the clearest signals you can give crawlers about which pages matter.</p>
+
+<h2>Why sitemaps still matter in 2026</h2>
+<p>Even with strong internal links and AI-assisted discovery, a well-formed sitemap remains useful for:</p>
+<ul>
+<li>Helping new or updated pages get discovered faster.</li>
+<li>Communicating last-modified dates so crawlers can prioritise fresh content.</li>
+<li>Supporting large or complex sites where some pages are hard to reach by links alone.</li>
+<li>Working alongside robots.txt (which can point to the sitemap) and schema markup for clearer site understanding by both traditional search and AI answer engines.</li>
+</ul>
+
+<h2>How to use this XML Sitemap Generator</h2>
+<p>1. Paste or type full page URLs, one per line. Each must start with http:// or https://.<br>
+2. Set a default last-modified date (usually today or the real last update).<br>
+3. Choose a default priority (0.0–1.0; higher means more important) and change frequency if you want those optional tags.<br>
+4. The valid XML appears instantly. Copy it or download sitemap.xml.<br>
+5. Upload the file to your site root (so it is available at https://yoursite.com/sitemap.xml) and submit the URL in Google Search Console and Bing Webmaster Tools.<br>
+6. Optionally add a Sitemap line in your robots.txt that points to the file.</p>
+
+<h2>Best practices for sitemaps</h2>
+<ul>
+<li>Include only canonical, indexable URLs you want in search results. Skip noindex pages, thank-you pages, staging URLs, and parameter duplicates.</li>
+<li>Keep a single sitemap under 50,000 URLs and 50 MB uncompressed. Split into multiple files and use a sitemap index if you exceed the limit.</li>
+<li>Use accurate lastmod dates when you know them; otherwise a sensible default is fine.</li>
+<li>Update the sitemap whenever you add or remove important pages, then resubmit it.</li>
+<li>Test the uploaded file by opening it in a browser and confirming it returns valid XML.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>Does a sitemap guarantee my pages will be indexed?</summary><p>No. It helps discovery but does not force crawling or indexing. Quality content, internal links, and technical health still matter most.</p></details>
+<details><summary>How many URLs can one sitemap contain?</summary><p>Up to 50,000 URLs or 50 MB uncompressed. Larger sites should split the file and create a sitemap index.</p></details>
+<details><summary>Do I need lastmod, priority, and changefreq?</summary><p>They are optional. Lastmod is the most useful of the three when accurate. Priority and changefreq are hints only and are often ignored.</p></details>
+<details><summary>Where do I upload the sitemap?</summary><p>Place sitemap.xml in your site root so it is reachable at yourdomain.com/sitemap.xml, then submit that URL in Search Console.</p></details>
+
+<h2>Read the guide</h2>
+<p><a href="../blog/what-is-an-xml-sitemap-and-how-to-create-one">What Is an XML Sitemap and How to Create One</a></p>
+
+<h2>More free tools</h2>
+<p><a href="robots-txt-generator">Robots.txt Generator</a> · <a href="meta-tag-generator">Meta Tag Generator</a> · <a href="schema-markup-generator">Schema Markup Generator</a> · <a href="slug-generator">Slug Generator</a> · <a href="llms-txt-generator">llms.txt Generator</a></p>
+</div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a sitemap guarantee my pages will be indexed?","acceptedAnswer":{"@type":"Answer","text":"No. It helps discovery but does not force crawling or indexing. Quality content, internal links, and technical health still matter most."}},{"@type":"Question","name":"How many URLs can one sitemap contain?","acceptedAnswer":{"@type":"Answer","text":"Up to 50,000 URLs or 50 MB uncompressed. Larger sites should split the file and create a sitemap index."}},{"@type":"Question","name":"Do I need lastmod, priority, and changefreq?","acceptedAnswer":{"@type":"Answer","text":"They are optional. Lastmod is the most useful of the three when accurate. Priority and changefreq are hints only and are often ignored."}},{"@type":"Question","name":"Where do I upload the sitemap?","acceptedAnswer":{"@type":"Answer","text":"Place sitemap.xml in your site root so it is reachable at yourdomain.com/sitemap.xml, then submit that URL in Search Console."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href=".">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
+document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(!b)return;var tx=$(b.dataset.copy).textContent,o=b.textContent;
+ (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
+ b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function gen(){
+ var lines=$('urls').value.split('\n').map(function(x){return x.trim()}).filter(Boolean);
+ var valid=[],seen={};
+ lines.forEach(function(u){
+  if(!/^https?:\/\//i.test(u))return;
+  if(seen[u])return;seen[u]=1;valid.push(u);
+ });
+ $('uc').textContent=valid.length+' URL'+(valid.length===1?'':'s');
+ var last=$('lastmod').value||'',pri=parseFloat($('priority').value),cf=$('changefreq').value;
+ var xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+ valid.forEach(function(u){
+  xml+='  <url>\n    <loc>'+esc(u)+'</loc>\n';
+  if(last)xml+='    <lastmod>'+last+'</lastmod>\n';
+  if(cf)xml+='    <changefreq>'+cf+'</changefreq>\n';
+  if(!isNaN(pri)&&pri>=0&&pri<=1)xml+='    <priority>'+pri.toFixed(1)+'</priority>\n';
+  xml+='  </url>\n';
+ });
+ xml+='</urlset>';
+ $('out').textContent=valid.length?xml:'Paste at least one valid URL (starting with http:// or https://) to generate a sitemap.';
+}
+['urls','lastmod','priority','changefreq'].forEach(function(i){$(i).addEventListener('input',gen)});
+gen();
+$('dl').onclick=function(){var txt=$('out').textContent;if(txt.indexOf('<urlset')===-1)return;var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'application/xml'}));a.download='sitemap.xml';document.body.appendChild(a);a.click();a.remove()};
+</script></body></html>
