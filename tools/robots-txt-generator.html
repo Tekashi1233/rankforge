@@ -52,9 +52,19 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-copy
  (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
  b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
 
-function rob(){var l=['User-agent: *'],ps=$('rp').value.split('\n').map(function(x){return x.trim()}).filter(Boolean);
- if($('rd').value==='b')l.push('Disallow: /');else if(ps.length)ps.forEach(function(p){l.push('Disallow: '+(p[0]==='/'?p:'/'+p))});else l.push('Disallow:');
- var s=$('rs').value.trim();if(s)l.push('','Sitemap: '+s);$('ro').textContent=l.join('\n')}
+function rob(){
+ var l=['User-agent: *'];
+ var ps=$('rp').value.split('\n').map(function(x){return x.trim()}).filter(Boolean);
+ if($('rd').value==='b')l.push('Disallow: /');
+ else if(ps.length)ps.forEach(function(p){l.push('Disallow: '+(p.charAt(0)==='/'?p:'/'+p))});
+ else l.push('Disallow:');
+ var s=$('rs').value.trim();
+ if(s){
+  try{var u=new URL(s);if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error();l.push('','Sitemap: '+u.href)}
+  catch(e){$('ro').textContent='Invalid sitemap URL. Enter a full http:// or https:// URL.';return}
+ }
+ $('ro').textContent=l.join('\n');
+}
 ['rd','rp','rs'].forEach(function(i){$(i).addEventListener('input',rob)});rob();
 $('rdl').onclick=function(){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('ro').textContent],{type:'text/plain'}));a.download='robots.txt';document.body.appendChild(a);a.click();a.remove()};
 </script></body></html>
