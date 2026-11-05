@@ -49,10 +49,25 @@
     });
   }
 
-  // Cookie banner
+  // Informational privacy notice; dismissing it is not advertising consent.
   if (ck) {
+    var notice = ck.querySelector('span');
+    if (notice) {
+      var oldLink = notice.querySelector('a');
+      var privacyHref = oldLink ? oldLink.getAttribute('href') : '/privacy';
+      var privacyLink = document.createElement('a');
+      privacyLink.href = privacyHref;
+      privacyLink.style.color = '#fff';
+      privacyLink.textContent = 'Privacy Policy';
+      notice.textContent = 'RankForge does not currently load advertising or analytics scripts. This notice is informational, not ad consent. ';
+      notice.appendChild(privacyLink);
+    }
+    if (cka) {
+      cka.textContent = 'Dismiss';
+      cka.setAttribute('aria-label', 'Dismiss privacy notice');
+    }
     try {
-      if (!localStorage.getItem('ck')) {
+      if (!localStorage.getItem('rf_privacy_notice_dismissed')) {
         ck.style.display = 'flex';
       }
     } catch (x) {
@@ -64,7 +79,7 @@
     cka.addEventListener('click', function () {
       ck.style.display = 'none';
       try {
-        localStorage.setItem('ck', '1');
+        localStorage.setItem('rf_privacy_notice_dismissed', '1');
       } catch (x) {}
     });
   }

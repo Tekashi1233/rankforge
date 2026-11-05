@@ -1,1 +1,234 @@
-See local file - full content will be used if supported, but for this call use a short version and note.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hreflang Tag Generator - Free SEO Tool | RankForge</title>
+<meta name="description" content="Generate hreflang link tags for language and regional versions of a page. Validate language codes and URLs in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml">
+<link rel="canonical" href="https://rankforgetool.com/tools/hreflang-generator">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RankForge">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Hreflang Tag Generator | RankForge">
+<meta property="og:description" content="Create hreflang tags for international pages with a free, private browser tool.">
+<meta property="og:url" content="https://rankforgetool.com/tools/hreflang-generator">
+<meta property="og:image" content="https://rankforgetool.com/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hreflang Tag Generator | RankForge">
+<meta name="twitter:description" content="Create hreflang tags for international pages with a free, private browser tool.">
+<meta name="twitter:image" content="https://rankforgetool.com/og-cover.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://rankforgetool.com/tools"},{"@type":"ListItem","position":3,"name":"Hreflang Tag Generator","item":"https://rankforgetool.com/tools/hreflang-generator"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Hreflang Tag Generator","url":"https://rankforgetool.com/tools/hreflang-generator","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","description":"Generate hreflang alternate link tags for international page variants. Runs in your browser.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"RankForge","url":"https://rankforgetool.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do hreflang tags need to be reciprocal?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each language version should reference itself and every alternate version, and the alternate pages should link back to it."}},{"@type":"Question","name":"What is x-default?","acceptedAnswer":{"@type":"Answer","text":"The x-default value can identify a fallback page for visitors whose language is not covered by your listed versions, such as a language selector."}},{"@type":"Question","name":"Where do I add the generated tags?","acceptedAnswer":{"@type":"Answer","text":"Add the link elements inside the head of each listed page, and keep the same complete set of alternates on every version."}}]}</script>
+<style>
+.variant{display:grid;grid-template-columns:minmax(120px,.7fr) minmax(240px,1.5fr) auto;gap:12px;align-items:end;padding:14px 0;border-bottom:1px solid var(--l)}
+.variant:last-child{border-bottom:0}
+.variant label{display:block;font-size:13px;font-weight:650;margin-bottom:6px}
+.variant input{width:100%}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.xdefault{margin:18px 0}
+#result{min-height:150px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+#status{min-height:1.5em}
+@media(max-width:640px){.variant{grid-template-columns:1fr;gap:8px}.variant .remove{justify-self:start}}
+</style>
+</head>
+<body>
+<nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href="../tools">Tools</a></li><li><a href="../blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu" aria-expanded="false">☰</button></div></nav>
+<main><div class="pg"><div class="c">
+<h1 class="t2">Hreflang Tag Generator</h1>
+<p class="lead">Create alternate link tags for the language and regional versions of a page. Everything is generated in your browser; your URLs are not uploaded.</p>
+<section class="box" aria-labelledby="builder-title">
+<h2 id="builder-title" style="font-size:20px;margin-bottom:8px">Add each language version</h2>
+<p style="color:var(--m);margin:0 0 12px">Use language codes such as <code>en</code>, <code>en-US</code> or <code>fr-CA</code>. Enter the full canonical URL for each page.</p>
+<div id="variants">
+<div class="variant"><div><label for="lang-1">Language code</label><input id="lang-1" class="language" value="en" autocomplete="off"></div><div><label for="url-1">Page URL</label><input id="url-1" class="page-url" type="url" placeholder="https://example.com/en/page" autocomplete="url"></div><button class="btn g remove" type="button" aria-label="Remove English version" disabled>Remove</button></div>
+<div class="variant"><div><label for="lang-2">Language code</label><input id="lang-2" class="language" value="es" autocomplete="off"></div><div><label for="url-2">Page URL</label><input id="url-2" class="page-url" type="url" placeholder="https://example.com/es/page" autocomplete="url"></div><button class="btn g remove" type="button" aria-label="Remove Spanish version" disabled>Remove</button></div>
+</div>
+<div class="xdefault"><label><input id="include-default" type="checkbox"> Include an optional <code>x-default</code> fallback</label><div id="default-wrap" hidden style="margin-top:10px"><label for="default-url">Fallback page URL</label><input id="default-url" type="url" placeholder="https://example.com/"></div></div>
+<div class="actions"><button id="add-version" class="btn g" type="button">Add language version</button><button id="generate" class="btn" type="button">Generate tags</button><button id="copy" class="btn g" type="button" disabled>Copy tags</button></div>
+<p id="status" role="status" aria-live="polite" style="color:var(--m)"></p>
+<label for="result">HTML tags</label><textarea id="result" readonly aria-label="Generated hreflang link tags" placeholder="Your alternate link tags will appear here."></textarea>
+</section>
+<article class="art" style="max-width:none;margin-top:30px">
+<h2>What hreflang tags do</h2>
+<p>Hreflang annotations help search engines understand which pages are language or regional alternatives. For example, a site might have separate pages for English speakers in the United States and the United Kingdom. The tags identify those relationships; they do not translate the content or guarantee that a search engine will show a particular version.</p>
+<h2>How to use this generator</h2>
+<ol><li>Enter a valid language tag and the canonical URL for each version.</li><li>Add every translated or region-specific page that should be an alternate.</li><li>Optionally include an <code>x-default</code> URL for a fallback page.</li><li>Generate and copy the tags into the <code>&lt;head&gt;</code> section of every listed page.</li></ol>
+<p>Each version should contain the same set of alternate links, including a link to itself, and every alternate page should link back. Use fully qualified HTTPS URLs when the pages support HTTPS. Choose language-region codes that match the actual content and audience, such as <code>en-GB</code> for British English or <code>pt-BR</code> for Brazilian Portuguese. A language-only code like <code>fr</code> is appropriate when the page targets French speakers across regions.</p>
+<h2>Check the implementation before publishing</h2>
+<p>After adding the tags, verify that every URL returns the intended page, that the language codes are correct, and that all versions reference one another. Keep canonical tags consistent with your preferred page URLs. Hreflang and canonical signals solve different problems, so neither should accidentally point all language versions to a single page.</p>
+<details><summary>Do hreflang tags need to be reciprocal?</summary><p>Yes. Each page should reference itself and all its alternates, and those alternate pages should include a link back. This generator creates one set of tags; use that same set on every page in the group.</p></details>
+<details><summary>What does x-default mean?</summary><p>It can point to a fallback page for visitors whose language is not covered, often a language selector or a general-language landing page. It is optional.</p></details>
+<details><summary>Where should I place these tags?</summary><p>For this HTML output, place the link elements in the head of each page. Keep the values identical across versions and ensure each referenced URL is accessible.</p></details>
+</article>
+</div></div></main>
+<footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="../tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer>
+<div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div>
+<script src="../app.js"></script>
+<script>
+(function(){
+  var variants = document.getElementById('variants');
+  var includeDefault = document.getElementById('include-default');
+  var defaultWrap = document.getElementById('default-wrap');
+  var defaultUrl = document.getElementById('default-url');
+  var result = document.getElementById('result');
+  var status = document.getElementById('status');
+  var copyButton = document.getElementById('copy');
+
+  function showStatus(message, isError) {
+    status.textContent = message;
+    status.style.color = isError ? '#b42318' : 'var(--m)';
+  }
+
+  function addVersion() {
+    var row = document.createElement('div');
+    row.className = 'variant';
+    var languageWrap = document.createElement('div');
+    var languageLabel = document.createElement('label');
+    var language = document.createElement('input');
+    var urlWrap = document.createElement('div');
+    var urlLabel = document.createElement('label');
+    var url = document.createElement('input');
+    var remove = document.createElement('button');
+    var index = variants.children.length + 1;
+    languageLabel.textContent = 'Language code';
+    languageLabel.htmlFor = 'lang-' + index;
+    language.id = 'lang-' + index;
+    language.className = 'language';
+    language.autocomplete = 'off';
+    language.placeholder = 'fr-CA';
+    urlLabel.textContent = 'Page URL';
+    urlLabel.htmlFor = 'url-' + index;
+    url.id = 'url-' + index;
+    url.className = 'page-url';
+    url.type = 'url';
+    url.autocomplete = 'url';
+    url.placeholder = 'https://example.com/fr/page';
+    remove.type = 'button';
+    remove.className = 'btn g remove';
+    remove.textContent = 'Remove';
+    remove.setAttribute('aria-label', 'Remove language version ' + index);
+    languageWrap.appendChild(languageLabel);
+    languageWrap.appendChild(language);
+    urlWrap.appendChild(urlLabel);
+    urlWrap.appendChild(url);
+    row.appendChild(languageWrap);
+    row.appendChild(urlWrap);
+    row.appendChild(remove);
+    variants.appendChild(row);
+    language.focus();
+  }
+
+  function normalizeLanguage(value) {
+    var code = value.trim();
+    if (code.toLowerCase() === 'x-default') return 'x-default';
+    if (!/^[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$/.test(code)) {
+      throw new Error('Use a language tag like en, en-US or fr-CA.');
+    }
+    try {
+      return Intl.getCanonicalLocales(code)[0];
+    } catch (error) {
+      throw new Error('“' + code + '” is not a valid language tag. Try en, en-US or fr-CA.');
+    }
+  }
+
+  function normalizeUrl(value) {
+    var raw = value.trim();
+    var parsed;
+    if (!raw) throw new Error('Enter a URL for every language version.');
+    try {
+      parsed = new URL(raw);
+    } catch (error) {
+      throw new Error('Enter a full page URL beginning with https:// or http://.');
+    }
+    if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') {
+      throw new Error('Page URLs must begin with https:// or http://.');
+    }
+    if (parsed.username || parsed.password || parsed.hash) {
+      throw new Error('Remove any username, password or fragment from the page URL.');
+    }
+    return parsed.href;
+  }
+
+  function escapeAttribute(value) {
+    return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  document.getElementById('add-version').addEventListener('click', addVersion);
+  includeDefault.addEventListener('change', function() {
+    defaultWrap.hidden = !includeDefault.checked;
+  });
+  variants.addEventListener('click', function(event) {
+    var button = event.target.closest('.remove');
+    if (!button) return;
+    if (variants.children.length <= 2) {
+      showStatus('Add at least two language versions; the minimum is two.', true);
+      return;
+    }
+    button.closest('.variant').remove();
+    showStatus('', false);
+  });
+  document.getElementById('generate').addEventListener('click', function() {
+    var rows = Array.prototype.slice.call(variants.querySelectorAll('.variant'));
+    var seen = Object.create(null);
+    var entries = [];
+    try {
+      rows.forEach(function(row) {
+        var language = normalizeLanguage(row.querySelector('.language').value);
+        var url = normalizeUrl(row.querySelector('.page-url').value);
+        if (language === 'x-default') {
+          throw new Error('Use the optional x-default fallback field instead of adding it as a language row.');
+        }
+        var key = language.toLowerCase();
+        if (seen[key]) throw new Error('Each language code can only be used once.');
+        seen[key] = true;
+        entries.push({ language: language, url: url });
+      });
+      if (entries.filter(function(entry) { return entry.language !== 'x-default'; }).length < 2) {
+        throw new Error('Add at least two language or regional versions.');
+      }
+      if (includeDefault.checked) {
+        var fallback = normalizeUrl(defaultUrl.value);
+        entries.push({ language: 'x-default', url: fallback });
+      }
+      result.value = entries.map(function(entry) {
+        return '<link rel="alternate" hreflang="' + escapeAttribute(entry.language) + '" href="' + escapeAttribute(entry.url) + '">';
+      }).join('\n');
+      copyButton.disabled = false;
+      showStatus(entries.length + ' alternate tags generated. Add this same set to every page in the group.', false);
+    } catch (error) {
+      result.value = '';
+      copyButton.disabled = true;
+      showStatus(error.message, true);
+    }
+  });
+  copyButton.addEventListener('click', function() {
+    if (!result.value) return;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(result.value).then(function() {
+        showStatus('Tags copied to your clipboard.', false);
+      }).catch(function() {
+        result.focus();
+        result.select();
+        showStatus('Select the highlighted text and copy it manually.', false);
+      });
+    } else {
+      result.focus();
+      result.select();
+      showStatus('Select the highlighted text and copy it manually.', false);
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -13,11 +13,11 @@
 <link rel="icon" href="../favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../favicon.png">
 <link rel="canonical" href="https://rankforgetool.com/tools/rank-tracker">
+<meta name="robots" content="noindex,follow">
 <meta property="og:title" content="Rank Tracker — Coming Soon | RankForge">
-<meta property="og:description" content="Track keyword positions privately in your browser. Join the RankForge waitlist.">
+<meta property="og:description" content="This planned RankForge tool is not available yet. Browse the SEO tools that are live today.">
 <meta property="og:url" content="https://rankforgetool.com/tools/rank-tracker">
 <meta property="og:image" content="https://rankforgetool.com/og-cover.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Rank Tracker","url":"https://rankforgetool.com/tools/rank-tracker","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","description":"Monitor keyword rankings over time. Coming soon to RankForge.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 .premium-badge{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#1E5EFF,#6f9bff);color:#fff;font-size:12.5px;font-weight:700;padding:6px 16px;border-radius:99px;margin-bottom:16px;letter-spacing:.3px}
 .feature-list{list-style:none;padding:0;margin:0}
@@ -48,20 +48,14 @@
 <p style="margin-top:18px;font-size:14.5px;color:var(--m)">Most rank trackers force you to create an account and share your keywords. RankForge’s version will keep everything on your device so you stay in full control.</p>
 </div>
 <div class="box waitlist-box" style="text-align:center;display:flex;flex-direction:column;justify-content:center;padding:32px 24px">
-<div class="ic" style="width:72px;height:72px;font-size:36px;margin:0 auto 18px;background:linear-gradient(135deg,#e3ecff,#d0e0ff)">📈</div>
-<h3 style="margin-bottom:8px;font-size:19px">Get notified when it launches</h3>
-<p style="color:var(--m);font-size:14.5px;margin-bottom:20px;line-height:1.5">One email when the Rank Tracker is ready. That’s it — no newsletters, no spam.</p>
-<form id="waitlist" style="max-width:320px;margin:0 auto">
-<input type="email" id="email" placeholder="you@example.com" required style="margin-bottom:12px;padding:12px 14px">
-<button type="submit" class="btn" style="width:100%;padding:12px">Notify me</button>
-</form>
-<p id="thanks" style="display:none;color:#1E5EFF;font-weight:600;margin-top:14px;font-size:15px">You’re on the list. We’ll email you when it’s ready.</p>
-<p style="font-size:12.5px;color:#8b97b0;margin-top:14px">Your email stays in your browser only. Nothing is sent to a server.</p>
+<h3 style="margin-bottom:8px;font-size:19px">Not available yet</h3>
+<p style="color:var(--m);font-size:14.5px;margin-bottom:20px;line-height:1.5">This is a planned tool, not a working rank tracker. No waitlist or email collection is active on this page.</p>
+<p><a class="btn g" href="../tools">Browse available tools</a></p>
 </div>
 </div>
 
 <div class="note" style="margin-top:28px;background:linear-gradient(180deg,#f8faff,#fff);border:1px solid #e3ecff">
-<strong style="color:var(--n)">Why the wait?</strong> Accurate ranking data while staying fully client-side takes careful engineering. We’re building it so it remains free, private, and useful for everyone from day one.
+<strong style="color:var(--n)">Current status:</strong> This preview is not an active tool. We have removed the inactive signup form so the page does not imply that emails are being collected.
 </div>
 
 <p style="margin-top:32px"><a class="btn g" href=".">← All tools</a></p>
@@ -70,24 +64,5 @@
 <footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href=".">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer>
 <div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div>
 <script src="../app.js"></script>
-<script>
-(function(){
-  var form = document.getElementById('waitlist');
-  var thanks = document.getElementById('thanks');
-  var key = 'rf_waitlist_rank';
-  try {
-    if (localStorage.getItem(key)) {
-      form.style.display = 'none';
-      thanks.style.display = 'block';
-    }
-  } catch(e) {}
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    try { localStorage.setItem(key, '1'); } catch(e) {}
-    form.style.display = 'none';
-    thanks.style.display = 'block';
-  });
-})();
-</script>
 </body>
 </html>
