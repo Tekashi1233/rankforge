@@ -54,13 +54,24 @@ document.addEventListener('click',function(e){var b=e.target.closest('[data-copy
  (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
  b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
 
-function q(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')}
-function meta(){var t=$('mt').value,d=$('md').value,u=$('mu').value.trim(),i=$('mi').value.trim();
+function q(s){return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function safeUrl(value, optional){if(!value&&optional)return '';try{var u=new URL(value);return (u.protocol==='https:'||u.protocol==='http:')?u.href:''}catch(e){return ''}}
+function meta(){
+ var t=$('mt').value.trim(),d=$('md').value.trim(),rawUrl=$('mu').value.trim(),rawImage=$('mi').value.trim();
+ var u=safeUrl(rawUrl,true),i=safeUrl(rawImage,true);
  $('mtc').textContent=t.length+'/60';$('mtc').classList.toggle('bad',t.length>60);$('mdc').textContent=d.length+'/160';$('mdc').classList.toggle('bad',d.length>160);
- $('pt').textContent=t||'Your page title';$('pd').textContent=d||'Your description appears here.';$('pu').textContent=u||'example.com';
- var o=[];if(t)o.push('<title>'+q(t)+'</title>');if(d)o.push('<meta name="description" content="'+q(d)+'">');if(u)o.push('');
- if(t)o.push('');if(d)o.push('');if(u)o.push('');
- if(i)o.push('');if(t||d)o.push('','');
- $('mo').textContent=o.join('\n')||'Fill in the fields to generate tags.'}
+ $('pt').textContent=t||'Your page title';$('pd').textContent=d||'Your description appears here.';
+ try{$('pu').textContent=u?new URL(u).hostname+(new URL(u).pathname==='/'?'':new URL(u).pathname):'example.com'}catch(e){$('pu').textContent='example.com'}
+ var o=[];
+ if(t)o.push('<title>'+q(t)+'</title>');
+ if(d)o.push('<meta name="description" content="'+q(d)+'">');
+ if(rawUrl&&!u)o.push('<!-- Enter a valid http:// or https:// page URL to generate canonical and social URL tags. -->');
+ if(u)o.push('<link rel="canonical" href="'+q(u)+'">');
+ if(t)o.push('<meta property="og:title" content="'+q(t)+'">');
+ if(d)o.push('<meta property="og:description" content="'+q(d)+'">');
+ if(u)o.push('<meta property="og:url" content="'+q(u)+'">');
+ if(i)o.push('<meta property="og:image" content="'+q(i)+'">');
+ $('mo').textContent=o.join('\n')||'Fill in the fields to generate tags.';
+}
 ['mt','md','mu','mi'].forEach(function(i){$(i).addEventListener('input',meta)});meta();
 </script></body></html>
