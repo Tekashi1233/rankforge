@@ -65,7 +65,7 @@ function gen(){
  if(valid.length>50000){$('uc').textContent='Too many URLs';$('out').textContent='A sitemap can contain at most 50,000 URLs. Split the list into multiple sitemaps.';return}
  $('uc').textContent=valid.length+' valid URL'+(valid.length===1?'':'s')+(invalid?' · '+invalid+' invalid':'');
  var last=$('lastmod').value||'',pri=parseFloat($('priority').value),cf=$('changefreq').value;
- var dateValid=!last||/^\\d{4}-\\d{2}-\\d{2}$/.test(last)&&!isNaN(Date.parse(last+'T00:00:00Z'));
+ var dateValid=!last||/^\d{4}-\d{2}-\d{2}$/.test(last)&&!isNaN(Date.parse(last+'T00:00:00Z'));
  if(!dateValid){$('out').textContent='Invalid last modified date. Choose a valid date.';return}
  var xml='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
  valid.forEach(function(u){
