@@ -49,7 +49,18 @@
     });
   }
 
-  // Informational privacy notice; dismissing it is not advertising consent.
+  // Load the publisher's AdSense tag site-wide. Ads may not serve until Google approves the site.
+  if (!document.querySelector('script[data-rankforge-adsense]')) {
+    var adsense = document.createElement('script');
+    adsense.async = true;
+    adsense.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853';
+    adsense.crossOrigin = 'anonymous';
+    adsense.setAttribute('data-rankforge-adsense', 'true');
+    document.head.appendChild(adsense);
+  }
+
+  // Informational notice only. Google's certified CMP / Privacy & messaging
+  // must collect regulated ad-consent signals; dismissing this notice is not consent.
   if (ck) {
     var notice = ck.querySelector('span');
     if (notice) {
@@ -59,17 +70,17 @@
       privacyLink.href = privacyHref;
       privacyLink.style.color = '#fff';
       privacyLink.textContent = 'Privacy Policy';
-      notice.textContent = 'RankForge does not currently load advertising or analytics scripts. This notice is informational, not ad consent. ';
+      notice.textContent = 'RankForge uses Google AdSense. Google and its partners may use cookies or similar technologies for advertising and measurement. This notice is not a consent choice. ';
       notice.appendChild(privacyLink);
     }
     if (cka) {
       cka.textContent = 'Dismiss';
-      cka.setAttribute('aria-label', 'Dismiss privacy notice');
+      cka.setAttribute('aria-label', 'Dismiss advertising and privacy notice');
     }
+    ck.setAttribute('role', 'region');
+    ck.setAttribute('aria-label', 'Advertising and privacy notice');
     try {
-      if (!localStorage.getItem('rf_privacy_notice_dismissed')) {
-        ck.style.display = 'flex';
-      }
+      if (!localStorage.getItem('rf_privacy_notice_dismissed')) ck.style.display = 'flex';
     } catch (x) {
       ck.style.display = 'flex';
     }
@@ -78,9 +89,7 @@
   if (cka && ck) {
     cka.addEventListener('click', function () {
       ck.style.display = 'none';
-      try {
-        localStorage.setItem('rf_privacy_notice_dismissed', '1');
-      } catch (x) {}
+      try { localStorage.setItem('rf_privacy_notice_dismissed', '1'); } catch (x) {}
     });
   }
 })();
