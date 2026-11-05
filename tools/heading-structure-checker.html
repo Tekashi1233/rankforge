@@ -1,1 +1,125 @@
-PLACEHOLDER_TOOL
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heading Structure Checker - Free H1–H6 Analyser | RankForge</title>
+<meta name="description" content="Paste HTML or text and check your heading hierarchy. Spot missing H1, skipped levels and order problems that hurt SEO and accessibility. Free, runs in the browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml">
+<link rel="canonical" href="https://rankforgetool.com/tools/heading-structure-checker">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RankForge">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Heading Structure Checker - Free H1–H6 Analyser | RankForge">
+<meta property="og:description" content="Paste HTML or text and check your heading hierarchy. Spot missing H1, skipped levels and order problems.">
+<meta property="og:url" content="https://rankforgetool.com/tools/heading-structure-checker">
+<meta property="og:image" content="https://rankforgetool.com/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Heading Structure Checker - Free H1–H6 Analyser | RankForge">
+<meta name="twitter:description" content="Paste HTML or text and check your heading hierarchy. Spot missing H1, skipped levels and order problems.">
+<meta name="twitter:image" content="https://rankforgetool.com/og-cover.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://rankforgetool.com/tools"},{"@type":"ListItem","position":3,"name":"Heading Structure Checker","item":"https://rankforgetool.com/tools/heading-structure-checker"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Heading Structure Checker","url":"https://rankforgetool.com/tools/heading-structure-checker","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href=".">Tools</a></li><li><a href="../blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav>
+<main><div class="pg"><div class="c">
+<h1 class="t2">Heading Structure Checker</h1>
+<p class="lead">Paste page HTML or plain text with headings. See the hierarchy, missing H1, and skipped levels in seconds.</p>
+<div class="tool">
+<div class="box">
+<label>HTML or text with headings</label>
+<textarea id="src" rows="12" placeholder="Paste the page HTML or text that contains H1–H6 tags or Markdown-style headings..."></textarea>
+<button class="btn" id="go" style="margin-top:12px">Analyse headings</button>
+</div>
+<div class="box">
+<b>Results</b>
+<div id="out" style="margin-top:12px;font-size:14px;line-height:1.5">Paste content and click Analyse.</div>
+</div>
+</div>
+<div class="art" style="max-width:none;margin-top:28px">
+<h2>Why heading structure matters</h2>
+<p>Headings (H1 through H6) create the outline of a page. Search engines and AI systems use that outline to understand topics and subtopics. Screen readers rely on it for navigation. A clear hierarchy also helps human readers scan the page.</p>
+<h2>Common problems this tool catches</h2>
+<ul>
+<li><strong>Missing H1</strong> — every page should have exactly one main H1 that states the primary topic.</li>
+<li><strong>Multiple H1s</strong> — can dilute the main topic signal.</li>
+<li><strong>Skipped levels</strong> — jumping from H1 to H3 (or H2 to H4) without the intermediate level confuses both users and machines.</li>
+<li><strong>Out-of-order levels</strong> — headings that decrease then increase inconsistently.</li>
+</ul>
+<p>Fixing these issues is one of the simplest on-page SEO and accessibility wins you can make.</p>
+</div>
+</div></div></main>
+<footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href=".">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer>
+<div id="ck"><span>We use cookies to run the site and show ads. See our <a href="../privacy" style="color:#fff">Privacy Policy</a>.</span><button class="btn" id="cka" style="padding:8px 16px;font-size:14px">Got it</button></div>
+<script src="../app.js"></script>
+<script>
+(function(){
+  function escapeHTML(value){
+    return String(value).replace(/[&<>"']/g, function(char){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char];
+    });
+  }
+  function analyse(){
+    var src = document.getElementById('src').value || '';
+    var out = document.getElementById('out');
+    if(!src.trim()){ out.textContent = 'Paste content and click Analyse.'; return; }
+    var headings = [];
+    // HTML headings
+    var re = /<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi;
+    var m;
+    while((m = re.exec(src)) !== null){
+      var text = m[2].replace(/<[^>]+>/g,'').replace(/\s+/g,' ').trim();
+      headings.push({level: parseInt(m[1],10), text: text || '(empty)'});
+    }
+    // Markdown-style if no HTML found
+    if(headings.length === 0){
+      var lines = src.split(/\r?\n/);
+      for(var i=0;i<lines.length;i++){
+        var lm = /^(#{1,6})\s+(.+)$/.exec(lines[i]);
+        if(lm) headings.push({level: lm[1].length, text: lm[2].trim()});
+      }
+    }
+    if(headings.length === 0){
+      out.innerHTML = '<p>No headings found. Paste HTML with &lt;h1&gt;–&lt;h6&gt; tags or Markdown headings (# ## ###).</p>';
+      return;
+    }
+    var h1count = headings.filter(function(h){return h.level===1;}).length;
+    var issues = [];
+    if(h1count === 0) issues.push('No H1 found. Add one main H1 that describes the page topic.');
+    if(h1count > 1) issues.push('Multiple H1 tags (' + h1count + '). Prefer a single H1 per page.');
+    var prev = 0;
+    for(var j=0;j<headings.length;j++){
+      var lv = headings[j].level;
+      if(prev > 0 && lv > prev + 1) issues.push('Skipped level before "' + escapeHTML(headings[j].text.slice(0,40)) + '…" (H' + prev + ' → H' + lv + ').');
+      prev = lv;
+    }
+    var html = '';
+    if(issues.length){
+      html += '<p style="color:#b45309;font-weight:600">Issues found</p><ul>';
+      issues.forEach(function(i){ html += '<li>' + i + '</li>'; });
+      html += '</ul>';
+    } else {
+      html += '<p style="color:#15803d;font-weight:600">No major hierarchy issues detected.</p>';
+    }
+    html += '<p style="margin-top:16px"><b>Outline</b></p><ol style="padding-left:20px">';
+    headings.forEach(function(h){
+      html += '<li style="margin-left:' + ((h.level-1)*16) + 'px">H' + h.level + ': ' + escapeHTML(h.text) + '</li>';
+    });
+    html += '</ol>';
+    out.innerHTML = html;
+  }
+  document.getElementById('go').addEventListener('click', analyse);
+})();
+</script>
+</body>
+</html>
