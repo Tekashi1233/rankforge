@@ -76,7 +76,14 @@ Note on commit granularity: blog files carry expansion + author + fonts together
 
 ## Push / deploy status
 
-(To be filled after push — see live verification below.)
+Pushed 2026-11-06: 80b7958..fbec076 main -> main (6 commits: 9330dce, f09a355, 6b16ba7, 508fa93, fd5ecdd, fbec076). Cloudflare deploy verified live ~75s after push:
+- Home 200; expanded blog post /blog/how-to-write-seo-friendly-url-slugs 200 with new section "Common slug mistakes to avoid" present; heading-structure post 200 with "Common heading mistakes and how to fix them" present
+- About 200 with "Who writes RankForge" section and Person Abdullah JSON-LD present
+- Sitemap 200, 44 entries
+- Removed tools all 404 as intended: /tools/backlink-checker, /tools/rank-tracker, /tools/site-audit
+- Removed pin 404: /pins/how-to-write-seo-friendly-url-slugs.jpg
+- Fonts non-blocking live: media="print" onload present on home page
+- RSS 200
 
 ## Remaining issues
 
