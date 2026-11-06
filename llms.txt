@@ -7,6 +7,7 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 ## Tools
 
 - [Meta Tag Generator](https://rankforgetool.com/tools/meta-tag-generator): Create title, description and Open Graph tags with a live Google preview
+- [Headline Analyzer](https://rankforgetool.com/tools/headline-analyzer): Score a headline for length, word balance and power words
 - [Word & Character Counter](https://rankforgetool.com/tools/word-counter): Count words, characters, sentences and estimate reading time
 - [Slug Generator](https://rankforgetool.com/tools/slug-generator): Turn any title into a clean SEO-friendly URL slug
 - [Robots.txt Generator](https://rankforgetool.com/tools/robots-txt-generator): Build crawl rules and download a robots.txt file
