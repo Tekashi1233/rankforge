@@ -461,6 +461,11 @@ footer .logo {
   font-size: 18px;
 }
 
+.legal h2 {
+  margin: 22px 0 6px;
+  font-size: 18px;
+}
+
 .legal p,
 .legal li {
   color: var(--m);
