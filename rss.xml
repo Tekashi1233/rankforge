@@ -5,140 +5,147 @@
     <link>https://rankforgetool.com/blog</link>
     <description>Practical, plain-English guides on SEO, GEO, and browser-based tools from RankForge.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://rankforgetool.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Is Heading Structure and How to Check It</title>
+      <link>https://rankforgetool.com/blog/what-is-heading-structure-and-how-to-check-it</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-heading-structure-and-how-to-check-it</guid>
+      <description>Learn why H1–H6 order matters for readers, SEO and AI systems, common mistakes to avoid, and how to check your page hierarchy in seconds.</description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>How to Optimize Content for GEO Success in 2027</title>
       <link>https://rankforgetool.com/blog/how-to-optimize-content-for-geo-success-in-2027</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-optimize-content-for-geo-success-in-2027</guid>
       <description>Practical steps for answer-first writing, statistics, structure and quotability so AI answer engines can cite your content in 2027.</description>
-      <pubDate>Tue, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>What Is an XML Sitemap and How to Create One</title>
       <link>https://rankforgetool.com/blog/what-is-an-xml-sitemap-and-how-to-create-one</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-an-xml-sitemap-and-how-to-create-one</guid>
       <description>Learn what an XML sitemap is, why it still matters for SEO and GEO, and how to create and submit a valid sitemap.xml.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>What Is Schema Markup and How to Add It for SEO and GEO</title>
       <link>https://rankforgetool.com/blog/what-is-schema-markup-and-how-to-add-it</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-schema-markup-and-how-to-add-it</guid>
       <description>Learn what schema markup is, why it matters for Google and AI answer engines in 2026, and how to add valid JSON-LD in minutes.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>What Is an llms.txt File and Should You Add One in 2026?</title>
       <link>https://rankforgetool.com/blog/what-is-llms-txt-and-should-you-add-one</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-llms-txt-and-should-you-add-one</guid>
       <description>Learn what an llms.txt file is, how it differs from robots.txt, when it helps with GEO, and how to create one quickly.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>Open Graph Protocol: Why Your Content Looks Broken on Social Media</title>
       <link>https://rankforgetool.com/blog/open-graph-protocol-why-content-looks-broken-on-social-media</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/open-graph-protocol-why-content-looks-broken-on-social-media</guid>
       <description>Learn what Open Graph tags are, why missing og:title, og:description and og:image ruin social previews, and how to fix them in minutes.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>How LLMs and Answer Engines Read Webpages Differently Than Traditional Search Bots</title>
       <link>https://rankforgetool.com/blog/how-llms-and-answer-engines-read-webpages</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/how-llms-and-answer-engines-read-webpages</guid>
       <description>Traditional crawlers index keywords and links. LLMs extract meaning and quotable passages. Learn the differences and how to optimise for both.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+    </item>    <item>
       <title>What Is a Readability Score and Why It Matters for SEO</title>
       <link>https://rankforgetool.com/blog/what-is-readability-score-and-why-it-matters-for-seo</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-readability-score-and-why-it-matters-for-seo</guid>
       <description>Learn what a readability score is, the ideal range for web content, and why clear writing helps both Google and AI search.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How to Do Keyword Research for Free</title>
-      <link>https://rankforgetool.com/blog/how-to-do-keyword-research-for-free</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-do-keyword-research-for-free</guid>
-      <description>Learn how to find the right keywords without paid tools, using Google suggestions, Search Console, Trends and a simple spreadsheet.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>On-Page SEO Checklist for Beginners</title>
-      <link>https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners</guid>
-      <description>A practical on-page SEO checklist covering titles, descriptions, URLs, headings, content, images, links and speed, with tips you can apply today.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How Long Should a Meta Description Be? (With Examples)</title>
-      <link>https://rankforgetool.com/blog/how-long-should-a-meta-description-be</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/how-long-should-a-meta-description-be</guid>
-      <description>Learn the ideal meta description length, how Google shortens snippets, and how to write descriptions that earn clicks, with good and bad examples.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What Is a Robots.txt File and How to Create One</title>
-      <link>https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one</guid>
-      <description>Understand what robots.txt does, how its rules work, common examples, mistakes to avoid, and how to create and test your own file in minutes.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How to Write SEO-Friendly URL Slugs</title>
-      <link>https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs</guid>
-      <description>A practical guide to URL slugs: what they are, why they matter, best practices, good and bad examples, and how to change a slug safely.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How Many Words Should a Blog Post Be? Word Count and SEO</title>
-      <link>https://rankforgetool.com/blog/how-many-words-should-a-blog-post-be</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/how-many-words-should-a-blog-post-be</guid>
-      <description>Is there an ideal blog post length for SEO? Learn what Google says, how to choose a word count by topic, and how to check length and reading time.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What Is Keyword Density? How to Use Keywords Without Stuffing</title>
-      <link>https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords</guid>
-      <description>Learn what keyword density means, why there is no perfect percentage, how to place keywords naturally, and how to check your text for overuse.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Title Case vs Sentence Case: Which Is Better for Headlines?</title>
-      <link>https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines</guid>
-      <description>Compare title case and sentence case, learn the main capitalization rules, see examples, and choose the right style for titles, headings and SEO.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>How to Create a Strong Password and Keep It Safe</title>
-      <link>https://rankforgetool.com/blog/how-to-create-a-strong-password</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-create-a-strong-password</guid>
-      <description>Learn what makes a password strong, how long it should be, why you should never reuse passwords, and how to protect your website and accounts.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>What Is Lorem Ipsum and When Should You Use Placeholder Text?</title>
-      <link>https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text</link>
-      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text</guid>
-      <description>Learn what lorem ipsum is, where it comes from, when placeholder text helps designers, and why you should replace it before your page goes live.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>What Is GEO? Generative Engine Optimization Explained for Beginners</title>
       <link>https://rankforgetool.com/blog/what-is-geo-generative-engine-optimization</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-geo-generative-engine-optimization</guid>
       <description>A beginner guide to GEO, how it differs from SEO, and practical steps to make your content easier for AI answer tools to find and cite.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to Do Keyword Research for Free</title>
+      <link>https://rankforgetool.com/blog/how-to-do-keyword-research-for-free</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-do-keyword-research-for-free</guid>
+      <description>Learn how to find the right keywords without paid tools, using Google suggestions, Search Console, Trends and a simple spreadsheet.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>On-Page SEO Checklist for Beginners</title>
+      <link>https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners</guid>
+      <description>A practical on-page SEO checklist covering titles, descriptions, URLs, headings, content, images, links and speed, with tips you can apply today.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Long Should a Meta Description Be? (With Examples)</title>
+      <link>https://rankforgetool.com/blog/how-long-should-a-meta-description-be</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-long-should-a-meta-description-be</guid>
+      <description>Learn the ideal meta description length, how Google shortens snippets, and how to write descriptions that earn clicks, with good and bad examples.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What Is a Robots.txt File and How to Create One</title>
+      <link>https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one</guid>
+      <description>Understand what robots.txt does, how its rules work, common examples, mistakes to avoid, and how to create and test your own file in minutes.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to Write SEO-Friendly URL Slugs</title>
+      <link>https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs</guid>
+      <description>A practical guide to URL slugs: what they are, why they matter, best practices, good and bad examples, and how to change a slug safely.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How Many Words Should a Blog Post Be? Word Count and SEO</title>
+      <link>https://rankforgetool.com/blog/how-many-words-should-a-blog-post-be</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-many-words-should-a-blog-post-be</guid>
+      <description>Is there an ideal blog post length for SEO? Learn what Google says, how to choose a word count by topic, and how to check length and reading time.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What Is Keyword Density? How to Use Keywords Without Stuffing</title>
+      <link>https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords</guid>
+      <description>Learn what keyword density means, why there is no perfect percentage, how to place keywords naturally, and how to check your text for overuse.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Title Case vs Sentence Case: Which Is Better for Headlines?</title>
+      <link>https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines</guid>
+      <description>Compare title case and sentence case, learn the main capitalization rules, see examples, and choose the right style for titles, headings and SEO.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>How to Create a Strong Password and Keep It Safe</title>
+      <link>https://rankforgetool.com/blog/how-to-create-a-strong-password</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-create-a-strong-password</guid>
+      <description>Learn what makes a password strong, how long it should be, why you should never reuse passwords, and how to protect your website and accounts.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>What Is Lorem Ipsum and When Should You Use Placeholder Text?</title>
+      <link>https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text</guid>
+      <description>Learn what lorem ipsum is, where it comes from, when placeholder text helps designers, and why you should replace it before your page goes live.</description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
     </item>
     <item>
       <title>What Is SEO and How Does It Work in 2026?</title>
       <link>https://rankforgetool.com/blog/what-is-seo-and-how-does-it-work</link>
       <guid isPermaLink="true">https://rankforgetool.com/blog/what-is-seo-and-how-does-it-work</guid>
       <description>SEO is the practice of improving your website so search engines can find it, understand it and show it to the right people. Learn how it works in plain language.</description>
-      <pubDate>Wed, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
     </item>
+
   </channel>
 </rss>
