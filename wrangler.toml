@@ -1,0 +1,10 @@
+# RankForge — static site served by the Cloudflare Worker "rankforge".
+# The site has no build step and no Worker script: the repo root is the
+# asset directory. not_found_handling = "404-page" makes missing URLs serve
+# the custom 404.html (with a 404 status) instead of Cloudflare's empty 404.
+name = "rankforge"
+compatibility_date = "2026-11-04"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"
