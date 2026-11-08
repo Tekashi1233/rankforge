@@ -1,6 +1,6 @@
 # RankForge
 
-> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, and AI readiness checker. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
+> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator and llms.txt generator. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
 
 RankForge is privacy-first: nothing users type is sent to a server. All tools work on mobile and desktop.
 
@@ -17,6 +17,12 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [Password Generator](https://rankforgetool.com/tools/password-generator): Create strong random passwords in the browser
 - [Lorem Ipsum Generator](https://rankforgetool.com/tools/lorem-ipsum-generator): Generate placeholder text for designs
 - [AI Readiness Checker](https://rankforgetool.com/tools/ai-readiness-checker): Check how ready a page is for AI search answers
+- [GEO Score Checker](https://rankforgetool.com/tools/geo-score-checker): Score any content 0-100 for AI-search readiness
+- [Heading Structure Checker](https://rankforgetool.com/tools/heading-structure-checker): Check heading hierarchy, spot a missing H1, skipped levels and order problems
+- [Hreflang Generator](https://rankforgetool.com/tools/hreflang-generator): Generate hreflang link tags for language and regional page versions
+- [LLMs.txt Generator](https://rankforgetool.com/tools/llms-txt-generator): Generate a clean llms.txt file that tells AI systems how to use and cite your content
+- [Schema Markup Generator](https://rankforgetool.com/tools/schema-markup-generator): Generate valid JSON-LD schema for Article, FAQ, Organization, Product and LocalBusiness
+- [XML Sitemap Generator](https://rankforgetool.com/tools/xml-sitemap-generator): Paste page URLs and generate a valid XML sitemap.xml
 
 ## Guides
 
@@ -25,6 +31,22 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [What Is SEO and How Does It Work?](https://rankforgetool.com/blog/what-is-seo-and-how-does-it-work): Plain-English explanation of search engine optimization
 - [How to Do Keyword Research for Free](https://rankforgetool.com/blog/how-to-do-keyword-research-for-free): Find keywords without paid tools
 - [On-Page SEO Checklist](https://rankforgetool.com/blog/on-page-seo-checklist-for-beginners): Practical checklist for beginners
+- [How LLMs and Answer Engines Read Webpages](https://rankforgetool.com/blog/how-llms-and-answer-engines-read-webpages): How LLMs and answer engines extract meaning and quotable passages, unlike traditional crawlers
+- [How Long Should a Meta Description Be?](https://rankforgetool.com/blog/how-long-should-a-meta-description-be): Ideal meta description length, how Google shortens snippets, and examples that earn clicks
+- [How Many Words Should a Blog Post Be?](https://rankforgetool.com/blog/how-many-words-should-a-blog-post-be): Choosing a word count by topic, what Google says, and how to check length and reading time
+- [How to Create a Strong Password](https://rankforgetool.com/blog/how-to-create-a-strong-password): How to create a strong password and keep it safe
+- [How to Optimize Content for GEO Success in 2027](https://rankforgetool.com/blog/how-to-optimize-content-for-geo-success-in-2027): Answer-first writing, statistics, structure and quotability for GEO
+- [How to Write Headlines That Get Clicks](https://rankforgetool.com/blog/how-to-write-headlines-that-get-clicks): What makes a headline clear and specific, and how to test yours before publishing
+- [How to Write SEO-Friendly URL Slugs](https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs): What URL slugs are, best practices, and how to change one without losing rankings
+- [Open Graph Protocol: Why Your Content Looks Broken on Social Media](https://rankforgetool.com/blog/open-graph-protocol-why-content-looks-broken-on-social-media): Why missing Open Graph tags break Facebook, X and LinkedIn previews, and how to fix them
+- [Title Case vs Sentence Case: Which Is Better?](https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines): Title case and sentence case compared, with capitalisation rules and examples
+- [What Is an XML Sitemap and How to Create One](https://rankforgetool.com/blog/what-is-an-xml-sitemap-and-how-to-create-one): What an XML sitemap is, why it matters, and how to create and submit one
+- [What Is Heading Structure and How to Check It](https://rankforgetool.com/blog/what-is-heading-structure-and-how-to-check-it): Why H1-H6 order matters for readers, SEO and AI systems, and how to check it
+- [What Is Keyword Density? A Simple Guide](https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords): What keyword density means, why there is no perfect percentage, and how to check for overuse
+- [What Is an llms.txt File and Should You Add One in 2026?](https://rankforgetool.com/blog/what-is-llms-txt-and-should-you-add-one): What an llms.txt file is, how it differs from robots.txt, and when it helps with GEO
+- [What Is Lorem Ipsum and When Should You Use It?](https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text): Where lorem ipsum comes from and when placeholder text helps designers
+- [What Is a Robots.txt File? How to Create One](https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one): What robots.txt does, how its rules work, and how to create and test your own file
+- [What Is Schema Markup and How to Add It for SEO and GEO](https://rankforgetool.com/blog/what-is-schema-markup-and-how-to-add-it): What schema markup is, why it matters for Google and AI answer engines, and how to add valid JSON-LD
 
 ## Optional
 
