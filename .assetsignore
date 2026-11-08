@@ -1,0 +1,7 @@
+# Internal files that must not be served as public site assets.
+# Workers Static Assets reads this file on deploy and skips the entries.
+reports/
+README.md
+wrangler.toml
+LICENSE
+.git
