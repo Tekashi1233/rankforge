@@ -12,3 +12,8 @@ main = "worker.js"
 directory = "."
 binding = "ASSETS"
 not_found_handling = "404-page"
+# Run worker.js BEFORE the asset layer serves anything. Without this,
+# Cloudflare serves matching assets directly and the Worker never runs,
+# so the 301 redirects above never fire (the asset layer instead issues
+# its own 307s for .html/trailing-slash URLs and serves http:// as 200).
+run_worker_first = true
