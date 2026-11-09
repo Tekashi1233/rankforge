@@ -3,5 +3,6 @@
 reports/
 README.md
 wrangler.toml
+worker.js
 LICENSE
 .git
