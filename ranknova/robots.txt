@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ranknova.example/sitemap.xml
