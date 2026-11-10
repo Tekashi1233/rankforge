@@ -1,0 +1,31 @@
+# RankNova
+
+> Four free browser-based SEO tools with original guides. Tool inputs are processed locally and are not uploaded.
+
+Canonical placeholder: https://ranknova.example
+
+## Tools
+- [Meta Tag Generator](https://ranknova.example/tools/meta-tag-generator)
+- [Schema Markup Generator](https://ranknova.example/tools/schema-markup-generator)
+- [XML Sitemap Generator](https://ranknova.example/tools/xml-sitemap-generator)
+- [Headline Analyzer](https://ranknova.example/tools/headline-analyzer)
+
+## Main pages
+- [Home](https://ranknova.example/)
+- [Tools](https://ranknova.example/tools.html)
+- [Guides](https://ranknova.example/blog.html)
+- [About](https://ranknova.example/about.html)
+- [Privacy](https://ranknova.example/privacy.html)
+- [Terms](https://ranknova.example/terms.html)
+- [Disclaimer](https://ranknova.example/disclaimer.html)
+- [RSS](https://ranknova.example/rss.xml)
+
+## Guides
+- [How Long Should a Title Tag Be? A Practical Guide](https://ranknova.example/blog/how-long-should-a-title-tag-be) — A clear way to write concise page titles that stay readable in search results and useful to real visitors.
+- [Meta Description Tips That Earn the Right Click](https://ranknova.example/blog/meta-description-tips-that-get-clicks) — Write a useful search snippet that explains the page, matches intent and gives people a reason to choose it.
+- [What Is Schema Markup and Why It Matters](https://ranknova.example/blog/what-is-schema-markup-and-why-it-matters) — Understand structured data, choose a truthful schema type and create clean JSON-LD for a page.
+- [How to Add FAQ Schema Step by Step](https://ranknova.example/blog/how-to-add-faq-schema-step-by-step) — A careful workflow for marking up visible questions and answers without inventing or overpromising search features.
+- [What Is an XML Sitemap and Do You Need One?](https://ranknova.example/blog/what-is-an-xml-sitemap-and-do-you-need-one) — Learn what a sitemap can communicate, when it helps and how to keep its URL list useful.
+- [Common Sitemap Mistakes and How to Fix Them](https://ranknova.example/blog/common-sitemap-mistakes-and-how-to-fix-them) — Spot stale, duplicate or inaccessible sitemap entries and build a cleaner URL inventory.
+- [How to Write Headlines People Click](https://ranknova.example/blog/how-to-write-headlines-people-click) — A practical headline process that balances clarity, reader intent and an honest reason to open the page.
+- [Headline Length and Power Words Explained](https://ranknova.example/blog/headline-length-and-power-words-explained) — Use headline length and vivid vocabulary as editing cues rather than rigid formulas or guarantees.
