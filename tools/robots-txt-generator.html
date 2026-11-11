@@ -2,7 +2,9 @@
 <div class="tool"><div class="box">
 <label>Default rule for all bots</label><select id="rd"><option value="a">Allow everything</option><option value="b">Block everything</option></select>
 <label>Paths to block (one per line)</label><textarea id="rp" placeholder="/admin/&#10;/private/"></textarea>
+<label>Paths to allow inside blocked folders (optional, one per line)</label><textarea id="ra" placeholder="/admin/public/"></textarea>
 <label>Sitemap URL (optional)</label><input id="rs" placeholder="https://example.com/sitemap.xml">
+<label style="display:flex;align-items:center;gap:8px;cursor:pointer"><input type="checkbox" id="rai" style="width:auto;margin:0">Block AI training crawlers (GPTBot, ClaudeBot, CCBot, Google-Extended and others)</label>
 </div><div class="box"><b>Your robots.txt</b><pre id="ro" style="margin-top:10px"></pre><button class="btn" data-copy="ro">Copy</button> <button class="btn g" id="rdl">Download file</button></div></div><div class="art" style="max-width:none;margin-top:28px">
 <h2>What is a robots.txt file?</h2>
 <p>robots.txt is a plain-text file placed in the root of a website that tells search engine crawlers which parts of the site they may or may not access. It follows the Robots Exclusion Protocol. When a crawler arrives at a domain, it first requests /robots.txt and reads the rules before deciding which pages to fetch. The file cannot force a crawler to obey (malicious bots often ignore it), but major search engines such as Google, Bing, and others respect it.</p>
@@ -20,9 +22,11 @@
 <h2>How to use this Robots.txt Generator</h2>
 <p>1. Choose the default rule: “Allow everything” (most common for public sites) or “Block everything” (useful for staging sites or temporary blocks).<br>
 2. List any specific paths you want to disallow, one per line (for example /admin/ or /private/).<br>
-3. Optionally add the full URL of your sitemap.<br>
-4. Copy the generated text or download the file as robots.txt.<br>
-5. Upload the file to the root directory of your website so it is reachable at https://yoursite.com/robots.txt.</p>
+3. If a blocked folder contains something crawlers should still reach, add it under “Paths to allow” (for example /admin/public/).<br>
+4. Optionally add the full URL of your sitemap.<br>
+5. Tick “Block AI training crawlers” if you do not want bots such as GPTBot or ClaudeBot to use your pages for training. Note that this can also reduce how often AI answer tools cite your site, so leave it unticked if you want AI visibility.<br>
+6. Copy the generated text or download the file as robots.txt.<br>
+7. Upload the file to the root directory of your website so it is reachable at https://yoursite.com/robots.txt.</p>
 
 <h2>How to interpret and test the results</h2>
 <p>After uploading, open the file in a browser to confirm it is publicly accessible. Then use Google Search Console’s robots.txt Tester (or the URL Inspection tool) to verify that important pages are still allowed and that blocked paths are correctly excluded. Remember that blocking a page in robots.txt does not remove it from the index if other sites link to it. To keep a page out of search results, combine robots.txt with a noindex meta tag or HTTP header.</p>
@@ -41,23 +45,30 @@
 <details><summary>Does robots.txt hide pages from Google?</summary><p>Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results.</p></details>
 <details><summary>Should I add my sitemap?</summary><p>Yes. Adding a Sitemap line helps crawlers find all your pages.</p></details>
 <details><summary>Can robots.txt improve rankings directly?</summary><p>Indirectly. By focusing crawl budget on important pages and preventing indexation of low-value URLs, it supports cleaner indexing and better overall site quality signals.</p></details>
+<details><summary>How do I block AI crawlers like GPTBot in robots.txt?</summary><p>Add a User-agent line for each bot (for example GPTBot, ClaudeBot, CCBot or Google-Extended) followed by Disallow: /. Tick the “Block AI training crawlers” option above and the generator writes those rules for you.</p></details>
+<details><summary>What is the difference between Allow and Disallow?</summary><p>Disallow tells crawlers not to visit a path. Allow creates an exception inside a blocked folder, so you can block /admin/ but still allow /admin/public/.</p></details>
 
 <h2>Read the guide</h2>
 <p><a href="../blog/what-is-robots-txt-and-how-to-create-one">What Is a Robots.txt File and How to Create One</a></p>
 
 <h2>More free tools</h2>
 <p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="word-counter">Word & Character Counter</a> · <a href="slug-generator">Slug Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a> · <a href="text-case-converter">Text Case Converter</a> · <a href="password-generator">Password Generator</a> · <a href="lorem-ipsum-generator">Lorem Ipsum Generator</a></p>
-</div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do I put robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "In your site root, so it opens at yourdomain.com/robots.txt."}}, {"@type": "Question", "name": "Does robots.txt hide pages from Google?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results."}}, {"@type": "Question", "name": "Should I add my sitemap?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adding a Sitemap line helps crawlers find all your pages."}}, {"@type": "Question", "name": "Can robots.txt improve rankings directly?", "acceptedAnswer": {"@type": "Answer", "text": "Indirectly. By focusing crawl budget on important pages and preventing indexation of low-value URLs, it supports cleaner indexing and better overall site quality signals."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
+</div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do I put robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "In your site root, so it opens at yourdomain.com/robots.txt."}}, {"@type": "Question", "name": "Does robots.txt hide pages from Google?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. It asks crawlers not to visit pages, but a blocked page can still appear if other sites link to it. Use a noindex tag to keep a page out of results."}}, {"@type": "Question", "name": "Should I add my sitemap?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Adding a Sitemap line helps crawlers find all your pages."}}, {"@type": "Question", "name": "Can robots.txt improve rankings directly?", "acceptedAnswer": {"@type": "Answer", "text": "Indirectly. By focusing crawl budget on important pages and preventing indexation of low-value URLs, it supports cleaner indexing and better overall site quality signals."}}, {"@type": "Question", "name": "How do I block AI crawlers like GPTBot in robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "Add a User-agent line for each bot (for example GPTBot, ClaudeBot, CCBot or Google-Extended) followed by Disallow: /. Tick the Block AI training crawlers option in the generator and it writes those rules for you."}}, {"@type": "Question", "name": "What is the difference between Allow and Disallow?", "acceptedAnswer": {"@type": "Answer", "text": "Disallow tells crawlers not to visit a path. Allow creates an exception inside a blocked folder, so you can block /admin/ but still allow /admin/public/."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
 document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(!b)return;var tx=$(b.dataset.copy).textContent,o=b.textContent;
  (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
  b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
 
+var AI_BOTS=['GPTBot','ChatGPT-User','ClaudeBot','anthropic-ai','Google-Extended','CCBot','PerplexityBot','Bytespider','Applebot-Extended','meta-externalagent'];
+function paths(id){return $(id).value.split('\n').map(function(x){return x.trim()}).filter(Boolean).map(function(p){return p.charAt(0)==='/'?p:'/'+p})}
 function rob(){
- var l=['User-agent: *'];
- var ps=$('rp').value.split('\n').map(function(x){return x.trim()}).filter(Boolean);
+ var l=[];
+ if($('rai').checked){AI_BOTS.forEach(function(b){l.push('User-agent: '+b)});l.push('Disallow: /','')}
+ l.push('User-agent: *');
+ var ps=paths('rp'),as=paths('ra');
  if($('rd').value==='b')l.push('Disallow: /');
- else if(ps.length)ps.forEach(function(p){l.push('Disallow: '+(p.charAt(0)==='/'?p:'/'+p))});
+ else if(ps.length)ps.forEach(function(p){l.push('Disallow: '+p)});
  else l.push('Disallow:');
+ as.forEach(function(p){l.push('Allow: '+p)});
  var s=$('rs').value.trim();
  if(s){
   try{var u=new URL(s);if(u.protocol!=='https:'&&u.protocol!=='http:')throw new Error();l.push('','Sitemap: '+u.href)}
@@ -65,6 +76,6 @@ function rob(){
  }
  $('ro').textContent=l.join('\n');
 }
-['rd','rp','rs'].forEach(function(i){$(i).addEventListener('input',rob)});rob();
+['rd','rp','ra','rs'].forEach(function(i){$(i).addEventListener('input',rob)});$('rai').addEventListener('change',rob);rob();
 $('rdl').onclick=function(){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([$('ro').textContent],{type:'text/plain'}));a.download='robots.txt';document.body.appendChild(a);a.click();a.remove()};
 </script></body></html>
