@@ -1,1 +1,95 @@
-CONTENT_FROM_FILE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What Is a Canonical URL and How to Set One | RankForge</title>
+<meta name="description" content="What a canonical URL is, why duplicate URLs hurt rankings, and how to add a clean self-referencing canonical tag to every page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml">
+<link rel="canonical" href="https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="RankForge">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What Is a Canonical URL and How to Set One | RankForge">
+<meta property="og:description" content="What a canonical URL is, why duplicate URLs hurt rankings, and how to add a clean self-referencing canonical tag to every page.">
+<meta property="og:url" content="https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one">
+<meta property="og:image" content="https://rankforgetool.com/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Is a Canonical URL and How to Set One | RankForge">
+<meta name="twitter:description" content="What a canonical URL is, why duplicate URLs hurt rankings, and how to add a clean self-referencing canonical tag to every page.">
+<meta name="twitter:image" content="https://rankforgetool.com/og-cover.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://rankforgetool.com/blog"},{"@type":"ListItem","position":3,"name":"What Is a Canonical URL and How to Set One","item":"https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What Is a Canonical URL and How to Set One","description":"What a canonical URL is, why duplicate URLs hurt rankings, and how to add a clean self-referencing canonical tag to every page.","author":{"@type":"Person","name":"Abdullah","url":"https://rankforgetool.com/about"},"publisher":{"@type":"Organization","name":"RankForge","logo":{"@type":"ImageObject","url":"https://rankforgetool.com/favicon.png"}},"datePublished":"2026-11-12","mainEntityOfPage":"https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one"}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853" crossorigin="anonymous" data-rankforge-adsense="true"></script></head>
+<body>
+<nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href="../tools">Tools</a></li><li><a href="/blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav>
+<main><div class="pg"><div class="c art">
+<h1>What Is a Canonical URL and How to Set One</h1>
+<p class="lead">A canonical URL tells search engines which version of a page is the “real” one when the same content can be reached at more than one address. Setting it correctly stops duplicate URLs from splitting your rankings.</p>
+<h2>What a canonical URL means</h2>
+<p>Most pages can be opened at several addresses without you noticing: with and without <code>www</code>, over <code>http</code> and <code>https</code>, with a trailing slash or without, with tracking parameters like <code>?utm_source=newsletter</code> attached, or in upper and lower case. To a visitor these are all the same page. To a search engine they are different URLs that happen to show the same content.</p>
+<p>The canonical URL is the single address you want search engines to treat as the original. You declare it with a link tag in the page head:</p>
+<p><code>&lt;link rel="canonical" href="https://example.com/blog/my-post"&gt;</code></p>
+<p>Every duplicate version of the page should carry the same tag pointing at that one preferred address.</p>
+<h2>Why it matters for SEO and GEO</h2>
+<p>When the same content lives at five URLs, links and signals get spread across all five instead of concentrating on one. Search engines may pick a version you did not intend, index the one with tracking parameters, or waste crawl budget re-crawling copies. A canonical tag consolidates those signals and makes the preferred URL the one that shows up in results.</p>
+<p>AI answer engines face the same problem. If a model sees the same passage at several addresses, it has to guess which one to cite. A clear canonical gives it a single, stable URL to attribute, which is exactly what you want for citations.</p>
+<h2>How to choose the canonical version</h2>
+<p>Pick one convention and apply it everywhere. The usual choices are:</p>
+<ul>
+<li><strong>HTTPS</strong>, not HTTP.</li>
+<li><strong>One hostname</strong>: either <code>www.example.com</code> or <code>example.com</code>, never both.</li>
+<li><strong>Lowercase paths</strong>, since many servers treat <code>/Blog</code> and <code>/blog</code> as different URLs.</li>
+<li><strong>A trailing-slash rule</strong>: either always or never on non-homepage URLs.</li>
+<li><strong>No tracking parameters</strong> such as <code>utm_*</code>, <code>fbclid</code> or <code>gclid</code>. Keep parameters only when they change the content, like a product variant.</li>
+</ul>
+<h2>How to set a canonical tag</h2>
+<ol>
+<li>Decide the preferred URL for the page using the rules above.</li>
+<li>Add <code>&lt;link rel="canonical" href="..."&gt;</code> inside the <code>&lt;head&gt;</code> with the full absolute URL, including <code>https://</code> and the hostname.</li>
+<li>Use a <strong>self-referencing canonical</strong> on the preferred page itself. It is best practice even when you have no known duplicates.</li>
+<li>Make every duplicate version point to the same preferred URL, not to itself.</li>
+<li>Where possible, also redirect the non-preferred versions (http, www, trailing slash) to the canonical with a 301, so visitors and crawlers land on the right address in one hop.</li>
+</ol>
+<p>Most CMS platforms add a self-referencing canonical automatically, but it is worth checking the page source, because themes and plugins sometimes emit the wrong hostname or a relative path.</p>
+<h2>Common canonical mistakes</h2>
+<ul>
+<li><strong>Relative URLs</strong> like <code>href="/blog/my-post"</code>. Use the full absolute URL.</li>
+<li><strong>Pointing every page to the homepage.</strong> Each page needs its own canonical.</li>
+<li><strong>Mixing conventions</strong>, such as a canonical with a trailing slash on one page and without on the next.</li>
+<li><strong>Canonical and redirect disagreeing.</strong> If page A canonicalises to B but B redirects to A, search engines will ignore both.</li>
+<li><strong>Canonicalising paginated or filtered pages</strong> to page one when the content is genuinely different.</li>
+<li><strong>Conflicting with hreflang.</strong> Each language version should usually be its own canonical.</li>
+</ul>
+<h2>How to check your canonical</h2>
+<p>View the page source and search for <code>rel="canonical"</code>. Confirm it is absolute, uses HTTPS and your preferred hostname, and matches the URL you actually want indexed. To build a clean tag quickly, paste any URL into RankForge’s <a href="../tools/canonical-url-generator">Canonical URL Generator</a>: it forces HTTPS, lowercases the path, strips tracking parameters, applies your trailing-slash rule and outputs a ready-to-paste tag.</p>
+<h2>Quick fix checklist</h2>
+<ol>
+<li>Choose HTTPS, one hostname, lowercase paths and a trailing-slash rule.</li>
+<li>Add an absolute self-referencing canonical to every indexable page.</li>
+<li>Point all duplicate versions at that one URL.</li>
+<li>Redirect http, www and trailing-slash variants with a 301.</li>
+<li>Re-check the source after any theme or plugin change.</li>
+</ol>
+<p>A correct canonical is one of the cheapest technical fixes in SEO: one line in the head, and every signal your page earns lands in the same place.</p>
+<h2>Related guides</h2>
+<ul>
+<li><a href="/blog/how-to-write-seo-friendly-url-slugs">How to write SEO-friendly URL slugs</a></li>
+<li><a href="/blog/on-page-seo-checklist-for-beginners">On-page SEO checklist for beginners</a></li>
+<li><a href="/blog/what-is-an-xml-sitemap-and-how-to-create-one">What is an XML sitemap and how to create one</a></li>
+</ul>
+</div></div></main>
+<footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="../tools">Tools</a><a href="/blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer>
+
+<script src="../app.js"></script>
+</body>
+</html>
