@@ -37,6 +37,20 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
 
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+
+    // Feeds are for readers and crawlers, not search results. Marking them
+    // noindex stops Search Console reporting them as "crawled - not indexed".
+    if (path === "/rss.xml" || path === "/sitemap.xml") {
+      const headers = new Headers(response.headers);
+      headers.set("X-Robots-Tag", "noindex");
+      return new Response(response.body, {
+        status: response.status,
+        statusText: response.statusText,
+        headers,
+      });
+    }
+
+    return response;
   },
 };
