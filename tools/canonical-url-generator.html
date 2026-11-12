@@ -1,1 +1,86 @@
-PLACEHOLDER
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Canonical URL Generator - Free Clean Canonical Tag Tool | RankForge</title><meta name="description" content="Generate a clean self-referencing canonical tag. Force HTTPS, lowercase the URL, strip tracking parameters and control trailing slashes. Free, no sign-up, runs in your browser."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript><link rel="stylesheet" href="../style.css"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="icon" href="../favicon.png" type="image/png"><link rel="apple-touch-icon" href="../favicon.png"><link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml"><link rel="canonical" href="https://rankforgetool.com/tools/canonical-url-generator"><meta property="og:type" content="website"><meta property="og:site_name" content="RankForge"><meta property="og:locale" content="en_US"><meta property="og:title" content="Canonical URL Generator - Free Clean Canonical Tag Tool | RankForge"><meta property="og:description" content="Generate a clean self-referencing canonical tag. Force HTTPS, lowercase the URL, strip tracking parameters and control trailing slashes. Free, no sign-up, runs in your browser."><meta property="og:url" content="https://rankforgetool.com/tools/canonical-url-generator"><meta property="og:image" content="https://rankforgetool.com/og-cover.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Canonical URL Generator - Free Clean Canonical Tag Tool | RankForge"><meta name="twitter:description" content="Generate a clean self-referencing canonical tag. Force HTTPS, lowercase the URL, strip tracking parameters and control trailing slashes. Free, no sign-up, runs in your browser."><meta name="twitter:image" content="https://rankforgetool.com/og-cover.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://rankforgetool.com/tools"},{"@type":"ListItem","position":3,"name":"Canonical URL Generator - Free Clean Canonical Tag Tool | RankForge","item":"https://rankforgetool.com/tools/canonical-url-generator"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Canonical URL Generator - Free Clean Canonical Tag Tool | RankForge","url":"https://rankforgetool.com/tools/canonical-url-generator","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","browserRequirements":"Requires JavaScript","description":"Generate a clean self-referencing canonical tag. Force HTTPS, lowercase the URL, strip tracking parameters and control trailing slashes. Free, no sign-up, runs in your browser.","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"RankForge","url":"https://rankforgetool.com/"}}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853" crossorigin="anonymous" data-rankforge-adsense="true"></script></head><body><nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href="/tools">Tools</a></li><li><a href="../blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav><main><div class="pg"><div class="c"><h1 class="t2">Canonical URL Generator</h1><p class="lead">Turn any page URL into a clean, self-referencing canonical tag. Force HTTPS, strip tracking parameters and normalize the address.</p>
+<div class="tool"><div class="box">
+<label>Page URL</label><input id="cu" placeholder="https://example.com/blog/post/?utm_source=newsletter&fbclid=abc">
+<label><input type="checkbox" id="https" checked> Force HTTPS</label>
+<label><input type="checkbox" id="lower" checked> Lowercase host and path</label>
+<label><input type="checkbox" id="slash"> Remove trailing slash (except homepage)</label>
+<label><input type="checkbox" id="params" checked> Strip common tracking parameters</label>
+</div><div class="box"><b>Generated canonical tag</b>
+<pre id="co" style="margin-top:10px">&lt;link rel="canonical" href="https://example.com/blog/post"&gt;</pre>
+<button class="btn" data-copy="co">Copy tag</button>
+<p style="margin-top:12px;font-size:14px;color:#666">Clean URL: <span id="cuo">https://example.com/blog/post</span></p>
+</div></div>
+<div class="art" style="max-width:none;margin-top:28px">
+<h2>What is a canonical URL?</h2>
+<p>A canonical URL is the preferred version of a page that you want search engines to index when the same content is available at more than one address. You declare it with a <code>&lt;link rel="canonical" href="…"&gt;</code> tag in the page’s &lt;head&gt;. Google and other engines usually honour the tag, consolidating ranking signals onto the single preferred URL instead of splitting them across duplicates.</p>
+<p>Common duplicate situations include HTTP vs HTTPS, www vs non-www, trailing-slash variants, session IDs, and tracking parameters such as utm_source or fbclid. Without a clear canonical, search engines may treat those versions as separate pages, diluting authority and wasting crawl budget.</p>
+
+<h2>Why a clean self-referencing canonical matters</h2>
+<p>Every page should point its canonical to itself (a self-referencing canonical). This removes ambiguity even when you do not currently have duplicates. It also protects against future issues if someone links to the page with extra parameters. Consistent canonicals make it easier for search engines and AI systems to understand which URL is the authoritative one.</p>
+<p>Normalization rules used by this tool follow common SEO practice:</p>
+<ul>
+<li>Prefer HTTPS over HTTP.</li>
+<li>Use consistent casing (usually lowercase).</li>
+<li>Remove tracking and advertising parameters that do not change page content.</li>
+<li>Decide on a trailing-slash policy and stick to it.</li>
+</ul>
+
+<h2>How to use this Canonical URL Generator</h2>
+<p>1. Paste the full page URL (with or without protocol or parameters).<br>
+2. Choose the normalization options that match your site’s preferred format.<br>
+3. The tool instantly produces a ready-to-paste <code>&lt;link rel="canonical"&gt;</code> tag and shows the clean URL.<br>
+4. Copy the tag and place it in the &lt;head&gt; of the page.<br>
+5. For every other version of the same content, point the canonical to this clean URL.</p>
+<p>All processing happens in your browser. Nothing is uploaded or stored.</p>
+
+<h2>Best practices for canonical tags</h2>
+<ul>
+<li>Use absolute URLs (include https://).</li>
+<li>Point to a page that returns HTTP 200, not a redirect or error.</li>
+<li>Include a self-referencing canonical on the preferred page itself.</li>
+<li>Be consistent: every duplicate should point to the same preferred URL.</li>
+<li>When using hreflang, the canonical should usually be the same-language version.</li>
+<li>Do not rely on robots.txt or noindex alone to solve duplicate-content problems.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>Does every page need a canonical tag?</summary><p>Yes. A self-referencing canonical is best practice even when you have no known duplicates. It removes ambiguity for search engines.</p></details>
+<details><summary>Should I strip all query parameters?</summary><p>Only tracking and advertising parameters that do not change the page content (utm_*, fbclid, gclid, etc.). Keep parameters that actually select different content, such as product variants or pagination if those are distinct pages.</p></details>
+<details><summary>HTTP or HTTPS in the canonical?</summary><p>Always prefer the HTTPS version unless your site has a technical reason to stay on HTTP.</p></details>
+<details><summary>What about trailing slashes?</summary><p>Pick one convention (with or without) and apply it consistently. This tool lets you remove trailing slashes on non-homepage URLs if that is your preference.</p></details>
+
+<h2>Read the guide</h2>
+<p><a href="../blog/what-is-a-canonical-url-and-how-to-set-one">What Is a Canonical URL and How to Set One</a></p>
+
+<h2>More free tools</h2>
+<p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="hreflang-generator">Hreflang Tag Generator</a> · <a href="slug-generator">Slug Generator</a> · <a href="xml-sitemap-generator">XML Sitemap Generator</a> · <a href="robots-txt-generator">Robots.txt Generator</a> · <a href="schema-markup-generator">Schema Markup Generator</a></p>
+</div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does every page need a canonical tag?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A self-referencing canonical is best practice even when you have no known duplicates. It removes ambiguity for search engines."}}, {"@type": "Question", "name": "Should I strip all query parameters?", "acceptedAnswer": {"@type": "Answer", "text": "Only tracking and advertising parameters that do not change the page content (utm_*, fbclid, gclid, etc.). Keep parameters that actually select different content, such as product variants or pagination if those are distinct pages."}}, {"@type": "Question", "name": "HTTP or HTTPS in the canonical?", "acceptedAnswer": {"@type": "Answer", "text": "Always prefer the HTTPS version unless your site has a technical reason to stay on HTTP."}}, {"@type": "Question", "name": "What about trailing slashes?", "acceptedAnswer": {"@type": "Answer", "text": "Pick one convention (with or without) and apply it consistently. This tool lets you remove trailing slashes on non-homepage URLs if that is your preference."}}]}</script>
+</div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
+document.addEventListener('click',function(e){var b=e.target.closest('[data-copy]');if(!b)return;var tx=$(b.dataset.copy).textContent,o=b.textContent;
+ (navigator.clipboard?navigator.clipboard.writeText(tx):Promise.reject()).catch(function(){var r=document.createRange();r.selectNodeContents($(b.dataset.copy));var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}).then(function(){});
+ b.textContent='Copied ✓';setTimeout(function(){b.textContent=o},1400)});
+
+var TRACKING = /^(utm_|fbclid|gclid|msclkid|mc_eid|mc_cid|_ga|igshid|ref|source|campaign)$/i;
+function gen(){
+  var raw=$('cu').value.trim();
+  if(!raw){ $('co').textContent='Paste a URL to generate the tag.'; $('cuo').textContent=''; return; }
+  try{
+    var u=new URL(raw.indexOf('://')===-1?'https://'+raw:raw);
+    if($('https').checked) u.protocol='https:';
+    if($('lower').checked){ u.hostname=u.hostname.toLowerCase(); u.pathname=u.pathname.toLowerCase(); }
+    if($('params').checked){
+      var keys=[]; u.searchParams.forEach(function(_,k){keys.push(k)});
+      keys.forEach(function(k){ if(TRACKING.test(k)) u.searchParams.delete(k); });
+    }
+    if($('slash').checked && u.pathname.length>1 && u.pathname.endsWith('/')) u.pathname=u.pathname.slice(0,-1);
+    var clean=u.toString().replace(/\/$/,'') || u.origin;
+    if(u.pathname==='/' && !u.search && !u.hash) clean=u.origin+'/';
+    else if(u.pathname==='/') clean=u.origin;
+    $('cuo').textContent=clean;
+    $('co').textContent='<link rel="canonical" href="'+clean.replace(/"/g,'&quot;')+'">';
+  }catch(e){ $('co').textContent='Invalid URL. Include a domain, e.g. example.com/page'; $('cuo').textContent=''; }
+}
+['cu','https','lower','slash','params'].forEach(function(i){$(i).addEventListener('input',gen);$(i).addEventListener('change',gen)});
+gen();
+</script></body></html>
