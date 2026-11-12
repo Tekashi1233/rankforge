@@ -1,6 +1,6 @@
 # RankForge
 
-> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator and llms.txt generator. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
+> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator, canonical URL generator and llms.txt generator. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
 
 RankForge is privacy-first: nothing users type is sent to a server. All tools work on mobile and desktop.
 
@@ -17,6 +17,7 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [Password Generator](https://rankforgetool.com/tools/password-generator): Create strong random passwords in the browser
 - [Lorem Ipsum Generator](https://rankforgetool.com/tools/lorem-ipsum-generator): Generate placeholder text for designs
 - [AI Readiness Checker](https://rankforgetool.com/tools/ai-readiness-checker): Check how ready a page is for AI search answers
+- [Canonical URL Generator](https://rankforgetool.com/tools/canonical-url-generator): Generate a clean self-referencing canonical tag with HTTPS, lowercase and tracking parameters removed
 - [GEO Score Checker](https://rankforgetool.com/tools/geo-score-checker): Score any content 0-100 for AI-search readiness
 - [Heading Structure Checker](https://rankforgetool.com/tools/heading-structure-checker): Check heading hierarchy, spot a missing H1, skipped levels and order problems
 - [Hreflang Generator](https://rankforgetool.com/tools/hreflang-generator): Generate hreflang link tags for language and regional page versions
@@ -40,6 +41,7 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [How to Write SEO-Friendly URL Slugs](https://rankforgetool.com/blog/how-to-write-seo-friendly-url-slugs): What URL slugs are, best practices, and how to change one without losing rankings
 - [Open Graph Protocol: Why Your Content Looks Broken on Social Media](https://rankforgetool.com/blog/open-graph-protocol-why-content-looks-broken-on-social-media): Why missing Open Graph tags break Facebook, X and LinkedIn previews, and how to fix them
 - [Title Case vs Sentence Case: Which Is Better?](https://rankforgetool.com/blog/title-case-vs-sentence-case-for-headlines): Title case and sentence case compared, with capitalisation rules and examples
+- [What Is a Canonical URL and How to Set One](https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one): What a canonical URL is, why duplicate URLs hurt rankings, and how to add a clean canonical tag
 - [What Is an XML Sitemap and How to Create One](https://rankforgetool.com/blog/what-is-an-xml-sitemap-and-how-to-create-one): What an XML sitemap is, why it matters, and how to create and submit one
 - [What Is Heading Structure and How to Check It](https://rankforgetool.com/blog/what-is-heading-structure-and-how-to-check-it): Why H1-H6 order matters for readers, SEO and AI systems, and how to check it
 - [What Is Keyword Density? A Simple Guide](https://rankforgetool.com/blog/what-is-keyword-density-and-how-to-use-keywords): What keyword density means, why there is no perfect percentage, and how to check for overuse
