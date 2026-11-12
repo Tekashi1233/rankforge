@@ -17,3 +17,7 @@ not_found_handling = "404-page"
 # so the 301 redirects above never fire (the asset layer instead issues
 # its own 307s for .html/trailing-slash URLs and serves http:// as 200).
 run_worker_first = true
+
+# Required by `wrangler preview`, which Workers Builds runs for non-production
+# branches (PR preview builds). Previews inherit the assets config above.
+[previews]
