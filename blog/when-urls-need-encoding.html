@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>When URLs Need Encoding (and When They Don't) | RankForge</title>
+<meta name="description" content="Links with spaces, Arabic text or &amp; inside a value break quietly. Learn when a URL needs percent-encoding, when it does not, and how to fix it in seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<link rel="alternate" type="application/rss+xml" title="RankForge SEO Blog" href="https://rankforgetool.com/rss.xml">
+<link rel="canonical" href="https://rankforgetool.com/blog/when-urls-need-encoding">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="RankForge">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="When URLs Need Encoding (and When They Don't) | RankForge">
+<meta property="og:description" content="Links with spaces, Arabic text or &amp; inside a value break quietly. Learn when a URL needs percent-encoding, when it does not, and how to fix it in seconds.">
+<meta property="og:url" content="https://rankforgetool.com/blog/when-urls-need-encoding">
+<meta property="og:image" content="https://rankforgetool.com/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="When URLs Need Encoding (and When They Don't) | RankForge">
+<meta name="twitter:description" content="Links with spaces, Arabic text or &amp; inside a value break quietly. Learn when a URL needs percent-encoding, when it does not, and how to fix it in seconds.">
+<meta name="twitter:image" content="https://rankforgetool.com/og-cover.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://rankforgetool.com/blog"},{"@type":"ListItem","position":3,"name":"When URLs Need Encoding (and When They Don't)","item":"https://rankforgetool.com/blog/when-urls-need-encoding"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"When URLs Need Encoding (and When They Don't)","description":"Links with spaces, Arabic text or &amp; inside a value break quietly. Learn when a URL needs percent-encoding, when it does not, and how to fix it in seconds.","url":"https://rankforgetool.com/blog/when-urls-need-encoding","mainEntityOfPage":"https://rankforgetool.com/blog/when-urls-need-encoding","datePublished":"2026-11-13","dateModified":"2026-11-13","author":{"@type":"Person","name":"Abdullah","url":"https://rankforgetool.com/about"},"publisher":{"@type":"Organization","name":"RankForge","url":"https://rankforgetool.com/","logo":{"@type":"ImageObject","url":"https://rankforgetool.com/favicon.png"}},"inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need to encode every URL I share?", "acceptedAnswer": {"@type": "Answer", "text": "No. Plain addresses made of letters, digits, hyphens and slashes are already safe. Encode only when a link holds spaces, non-English letters, emoji, or a character like & or # inside a value."}}, {"@type": "Question", "name": "Why does my link show %20 instead of spaces?", "acceptedAnswer": {"@type": "Answer", "text": "Because the spaces were percent-encoded so the link survives sharing. A space becomes %20, and the browser shows the readable version again once the page loads."}}, {"@type": "Question", "name": "What happens if I encode a URL twice?", "acceptedAnswer": {"@type": "Answer", "text": "Every percent sign becomes %25, so %20 turns into %2520 and the server looks for a page with a literal %20 in its name. Decode once to get the original back."}}, {"@type": "Question", "name": "Should slugs be encoded?", "acceptedAnswer": {"@type": "Answer", "text": "No. A good slug only holds safe characters: lowercase letters, digits and hyphens. That is one more reason to keep slugs clean, so they need no encoding at all."}}, {"@type": "Question", "name": "Does encoding help SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Encoding does not raise rankings by itself. It keeps links working, and working links keep their clicks and their crawl value. A link that returns a 404 helps no one."}}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853" crossorigin="anonymous" data-rankforge-adsense="true"></script></head>
+<body>
+<nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href="../tools">Tools</a></li><li><a href="/blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav>
+<main><div class="pg"><div class="c art">
+<p class="meta"><a href="/blog">← Blog</a> · Published November 13, 2026</p>
+<h1 style="font-size:clamp(28px,4vw,40px);letter-spacing:-1px">When URLs Need Encoding (and When They Don't)</h1>
+<p>You paste a link into a chat. It looks fine on your screen. Then a friend taps it and lands on a 404, or on a search page with half the words missing. The link broke somewhere between your clipboard and their browser, and the cause was a space. One small space in the middle of the address cut the link in half.</p>
+<p>I have watched the same thing happen with Arabic links more times than I can count. A shop sends a customer a product link with an Arabic search term in it. The customer taps it, the app opens the link up to the first odd character, and the rest is gone. The shop owner assumes the site is broken. The site is fine. The link was never safe to share in its raw form. Paste it into our <a href="../tools/url-encoder-decoder">URL Encoder / Decoder</a> first and the problem goes away in seconds.</p>
+<p class="note" style="margin:0 0 18px"><b>Quick answer:</b> Encode a URL when it holds spaces, non-English letters, emoji, or a character like &amp; or # inside a value. Each unsafe character becomes a percent sign followed by two hex digits, so a space turns into %20. Leave plain addresses alone. Letters, digits, hyphens and slashes need no encoding, and encoding a link a second time breaks it.</p>
+<h2>What percent-encoding actually is</h2>
+<p>A URL was built for a small set of characters. Letters, digits and a few marks like the hyphen and the slash travel fine. Anything outside that set has to be written in a code the browser can carry: a percent sign followed by two hexadecimal digits. A space is %20. An ampersand is %26. A question mark is %3F. The percent sign itself is %25, which is why an already-encoded link can go wrong so fast if you encode it twice.</p>
+<p>Letters from other alphabets take a longer route. Arabic, Chinese, Cyrillic and emoji are first turned into UTF-8 bytes, and each byte becomes its own percent code. The Arabic word السلام turns into %D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85. That looks ugly in an address bar, and it is the reason some people avoid non-English text in links entirely. They do not need to. The encoded form works exactly the same as the readable one, and every modern browser decodes it back when it shows the page.</p>
+<p>You never have to work out the codes by hand. A tool does it in one step. And most of the addresses you share every day need no encoding at all, because they are already made of safe characters. The skill is knowing which links fall into which group.</p>
+<h2>Encode to send, decode to read</h2>
+<p>You encode a link before you share it or store it. You decode one after you receive it, when you want to see what it really says. The two directions solve different problems, and mixing them up is where most of the confusion starts.</p>
+<p>Say a customer emails you a link that looks like this: https://example.com/search?q=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85. You cannot tell what they searched for, and you cannot paste it into a report as it stands. Run it through the decoder and it becomes https://example.com/search?q=السلام. Same link, readable at last.</p>
+<p>The reverse trip matters just as much. You write a search box on your site, a visitor types two Arabic words, and your code builds a link from what they typed. If the code drops the raw words into the address, the link may work in your browser and fail in theirs. Encode the value first and the link survives the trip. The rule is short: encode on the way out, decode on the way in.</p>
+<h2>encodeURI vs encodeURIComponent: pick the right one</h2>
+<p>JavaScript gives you two functions that sound almost the same, and using the wrong one is the fastest way to break a link that looked fine.</p>
+<p><code>encodeURI</code> is for a whole address. It leaves the parts that hold a URL together alone: the ://, the slashes, the question mark, the ampersand between parameters, the hash. It only fixes the unsafe characters, so a space inside a search term becomes %20 while the rest of the address keeps working.</p>
+<p><code>encodeURIComponent</code> is for one value inside an address. It encodes everything except letters, digits and a few safe marks, including the ? and the &amp; and the =. That is what you want for a search term, because an &amp; inside a search term would otherwise split your value into two parameters.</p>
+<table>
+<tr><th>Function</th><th>Leaves alone</th><th>Use it for</th></tr>
+<tr><td><code>encodeURI</code></td><td><code>; , / ? : @ &amp; = + $ - _ . ! ~ * ' ( ) #</code></td><td>A whole URL</td></tr>
+<tr><td><code>encodeURIComponent</code></td><td><code>A-Z a-z 0-9 - _ . ! ~ * ' ( )</code></td><td>One value inside a URL</td></tr>
+</table>
+<p>A quick test tells you which one you used. Encode a whole URL with <code>encodeURIComponent</code> and the :// becomes %3A%2F%2F, which no browser can open as a link. Encode a search term with <code>encodeURI</code> and an &amp; inside the term stays put, which splits the value in two. If your tool has a mode switch, use it. Ours does.</p>
+<h2>When you need to encode</h2>
+<p>You need encoding whenever a link carries something outside the safe set. That happens more often than most people expect.</p>
+<ul>
+<li><b>A query string with a search term.</b> Any value after ?q= or &amp;lang= can hold spaces, punctuation or words in another language.</li>
+<li><b>A file name with spaces.</b> A PDF called "price list 2026.pdf" needs its spaces encoded before it works as a link.</li>
+<li><b>Text in another alphabet.</b> Arabic, Urdu, Chinese and other scripts all need encoding in the address itself, even though the browser displays them decoded.</li>
+<li><b>Links pasted into email or chat.</b> Some apps cut a link off at the first space or bracket, so encoding first keeps the whole address in one piece.</li>
+<li><b>Values you build in code.</b> If your script joins user input into a URL, encode each value before you join it.</li>
+</ul>
+<h2>When you can leave a URL alone</h2>
+<p>Not every link needs this. A plain address made of lowercase letters, digits, hyphens and slashes is already safe. Your slugs are a good example. If you write slugs the way our guide to <a href="how-to-write-seo-friendly-url-slugs">SEO-friendly URL slugs</a> describes, with short lowercase words joined by hyphens, nothing in them needs encoding. That is one more reason to keep slugs clean: they survive copying, pasting and sharing without any extra work.</p>
+<p>The same goes for a link that is already encoded. If an address already holds %20 and %D8 codes, leave it alone. Encoding it again turns every % into %25, and %20 becomes %2520. The server then looks for a page with a literal %20 in its name, finds nothing, and returns a 404.</p>
+<p>Links your platform builds for you are usually handled. WordPress, Shopify and most site builders encode query values when they build a link, so step in only when you write or paste one by hand.</p>
+<h2>Three mistakes that break links</h2>
+<p>First, double encoding. This is the one I see most. A link arrives already encoded, someone runs it through an encoder again, and %20 becomes %2520. The fix is to decode once before you do anything else.</p>
+<p>Second, encoding a whole URL with <code>encodeURIComponent</code>. It feels like the safer choice because it encodes more, but it encodes the :// and the ?, so the address stops being an address. Use <code>encodeURI</code> for a whole URL and save <code>encodeURIComponent</code> for the values inside it.</p>
+<p>Third, the plus sign. In a query string, a plain + is read as a space by many servers. That is fine when your value really holds a space, and it is a real problem when your value holds a plus sign, like a phone number or a C++ search. A real plus has to be written as %2B. If your searches for C++ keep returning results for C, this is probably why.</p>
+<h2>A worked example: an Arabic search term</h2>
+<p>Say you run a small shop and a customer searches your site for "حذاء رياضي", running shoes in Arabic. The address your site builds looks like this before encoding: https://example.com/search?q=حذاء رياضي</p>
+<p>The space between the two words is the first problem, and the Arabic letters are the second. Encode the value with <code>encodeURIComponent</code> and you get: https://example.com/search?q=%D8%AD%D8%B0%D8%A7%D8%A1%20%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A</p>
+<p>That long string looks worse, and it works better. It survives email, chat apps and copy-paste without losing a character, and the server reads it back as the exact search the customer typed. Decode it on your side and you see the original words again.</p>
+<h2>Frequently asked questions</h2>
+<h3>Do I need to encode every URL I share?</h3>
+<p>No. Plain addresses made of letters, digits, hyphens and slashes are already safe. Encode only when a link holds spaces, non-English letters, emoji, or a character like &amp; or # inside a value.</p>
+<h3>Why does my link show %20 instead of spaces?</h3>
+<p>Because the spaces were percent-encoded so the link survives sharing. A space becomes %20, and the browser shows the readable version again once the page loads.</p>
+<h3>What happens if I encode a URL twice?</h3>
+<p>Every percent sign becomes %25, so %20 turns into %2520 and the server looks for a page with a literal %20 in its name. Decode once to get the original back.</p>
+<h3>Should slugs be encoded?</h3>
+<p>No. A good slug only holds safe characters: lowercase letters, digits and hyphens. That is one more reason to keep slugs clean, so they need no encoding at all. See our guide to <a href="how-to-write-seo-friendly-url-slugs">writing SEO-friendly URL slugs</a>.</p>
+<h3>Does encoding help SEO?</h3>
+<p>Encoding does not raise rankings by itself. It keeps links working, and working links keep their clicks and their crawl value. A link that returns a 404 helps no one. For the bigger picture on keeping your pages clean, see our <a href="what-is-a-canonical-url-and-how-to-set-one">guide to canonical URLs</a> and the <a href="on-page-seo-checklist-for-beginners">on-page SEO checklist</a>.</p>
+<h2>Related guides</h2>
+<ul>
+<li><a href="how-to-write-seo-friendly-url-slugs">How to Write SEO-Friendly URL Slugs</a></li>
+<li><a href="what-is-a-canonical-url-and-how-to-set-one">What Is a Canonical URL and How to Set One</a></li>
+<li><a href="on-page-seo-checklist-for-beginners">On-Page SEO Checklist for Beginners</a></li>
+</ul>
+<p>Next time a link looks wrong, do not rewrite the page behind it. Paste the address into our <a href="../tools/url-encoder-decoder">URL Encoder / Decoder</a>, check whether it needs encoding or decoding, and fix the address itself. It takes ten seconds, and it is the cheapest link repair you will ever do.</p>
+</div></div></main>
+<footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="../tools">Tools</a><a href="/blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer>
+
+<script src="../app.js"></script>
+</body>
+</html>
