@@ -5,8 +5,15 @@
     <link>https://rankforgetool.com/blog</link>
     <description>Practical, plain-English guides on SEO, GEO, and browser-based tools from RankForge.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://rankforgetool.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When URLs Need Encoding (and When They Don't)</title>
+      <link>https://rankforgetool.com/blog/when-urls-need-encoding</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/when-urls-need-encoding</guid>
+      <description>Links with spaces, Arabic text or &amp; inside a value break quietly. Learn when a URL needs percent-encoding, when it does not, and how to fix it in seconds.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What Is a Canonical URL and How to Set One</title>
       <link>https://rankforgetool.com/blog/what-is-a-canonical-url-and-how-to-set-one</link>
