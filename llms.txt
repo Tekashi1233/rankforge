@@ -1,6 +1,6 @@
 # RankForge
 
-> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator, canonical URL generator and llms.txt generator. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
+> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator, canonical URL generator, llms.txt generator, URL encoder / decoder and Base64 encoder / decoder. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
 
 RankForge is privacy-first: nothing users type is sent to a server. All tools work on mobile and desktop.
 
@@ -24,6 +24,8 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [LLMs.txt Generator](https://rankforgetool.com/tools/llms-txt-generator): Generate a clean llms.txt file that tells AI systems how to use and cite your content
 - [Schema Markup Generator](https://rankforgetool.com/tools/schema-markup-generator): Generate valid JSON-LD schema for Article, FAQ, Organization, Product and LocalBusiness
 - [XML Sitemap Generator](https://rankforgetool.com/tools/xml-sitemap-generator): Paste page URLs and generate a valid XML sitemap.xml
+- [URL Encoder / Decoder](https://rankforgetool.com/tools/url-encoder-decoder): Encode or decode any URL or text, including spaces, Arabic, emoji and query strings
+- [Base64 Encoder / Decoder](https://rankforgetool.com/tools/base64-encoder-decoder): Encode text to Base64 or decode it back, with a URL-safe mode
 
 ## Guides
 
@@ -49,6 +51,8 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [What Is Lorem Ipsum and When Should You Use It?](https://rankforgetool.com/blog/what-is-lorem-ipsum-and-when-to-use-placeholder-text): Where lorem ipsum comes from and when placeholder text helps designers
 - [What Is a Robots.txt File? How to Create One](https://rankforgetool.com/blog/what-is-robots-txt-and-how-to-create-one): What robots.txt does, how its rules work, and how to create and test your own file
 - [What Is Schema Markup and How to Add It for SEO and GEO](https://rankforgetool.com/blog/what-is-schema-markup-and-how-to-add-it): What schema markup is, why it matters for Google and AI answer engines, and how to add valid JSON-LD
+- [When URLs Need Encoding (and When They Don't)](https://rankforgetool.com/blog/when-urls-need-encoding): When a URL needs percent-encoding, when it does not, and how to fix it in seconds
+- [Where Base64 Shows Up and What It Does](https://rankforgetool.com/blog/where-base64-shows-up): Where Base64 shows up — email attachments, login headers, image data URLs — and what it does
 
 ## Optional
 
