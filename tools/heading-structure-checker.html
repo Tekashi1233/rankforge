@@ -29,7 +29,7 @@
 <meta name="twitter:image" content="https://rankforgetool.com/og-cover.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://rankforgetool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://rankforgetool.com/tools"},{"@type":"ListItem","position":3,"name":"Heading Structure Checker","item":"https://rankforgetool.com/tools/heading-structure-checker"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Heading Structure Checker","url":"https://rankforgetool.com/tools/heading-structure-checker","applicationCategory":"BusinessApplication","operatingSystem":"Any (browser)","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many H1 tags should a page have?", "acceptedAnswer": {"@type": "Answer", "text": "Exactly one. The H1 should state the main topic of the page and usually matches the title tag. Extra H1 tags dilute that signal, so demote styling-only headings to H2 or lower."}}, {"@type": "Question", "name": "Does skipping a heading level hurt SEO?", "acceptedAnswer": {"@type": "Answer", "text": "It can. A jump such as H1 straight to H3 breaks the page outline, which makes the topic structure harder for search engines, AI answer engines and screen readers to follow. Add the missing level instead of skipping it."}}, {"@type": "Question", "name": "Can I check Markdown headings as well as HTML?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If no HTML headings are found, the checker reads Markdown-style headings instead: one hash (#) is H1, two hashes (##) are H2, and so on up to six hashes."}}, {"@type": "Question", "name": "What should I fix first?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the H1: add one if it is missing, or keep only one if there are several. Then fix skipped levels, working from the top of the page down, and re-check the outline after each edit."}}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853" crossorigin="anonymous" data-rankforge-adsense="true"></script></head>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many H1 tags should a page have?", "acceptedAnswer": {"@type": "Answer", "text": "Exactly one. The H1 should state the main topic of the page and usually matches the title tag. Extra H1 tags dilute that signal, so demote styling-only headings to H2 or lower."}}, {"@type": "Question", "name": "Does skipping a heading level hurt SEO?", "acceptedAnswer": {"@type": "Answer", "text": "It can. A jump such as H1 straight to H3 breaks the page outline, which makes the topic structure harder for search engines, AI answer engines and screen readers to follow. Add the missing level instead of skipping it."}}, {"@type": "Question", "name": "Can I check Markdown headings as well as HTML?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. If no HTML headings are found, the checker reads Markdown-style headings instead: one hash (#) is H1, two hashes (##) are H2, and so on up to six hashes."}}, {"@type": "Question", "name": "What should I fix first?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the H1: add one if it is missing, or keep only one if there are several. Then fix skipped levels, working from the top of the page down, and re-check the outline after each edit."}}, {"@type": "Question", "name": "Should every page have an H2?", "acceptedAnswer": {"@type": "Answer", "text": "Most pages should. If a page has only an H1 and long paragraphs, splitting the content into H2 sections makes it easier to scan and gives search engines a clearer outline. Very short pages may not need one."}}, {"@type": "Question", "name": "Do headings directly affect rankings?", "acceptedAnswer": {"@type": "Answer", "text": "Headings are a small part of how search engines understand a page, not a ranking trick on their own. Clear headings help because they make the topic structure obvious, but they will not rescue thin or unhelpful content."}}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929540692555853" crossorigin="anonymous" data-rankforge-adsense="true"></script></head>
 <body>
 <nav><div class="c ni"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><ul class="nl" id="nl"><li><a href="../">Home</a></li><li><a href="/tools">Tools</a></li><li><a href="../blog">Blog</a></li><li><a href="../about">About</a></li><li><a href="../contact">Contact</a></li></ul><button id="mb" aria-label="Menu">☰</button></div></nav>
 <main><div class="pg"><div class="c">
@@ -49,6 +49,7 @@
 <div class="art" style="max-width:none;margin-top:28px">
 <h2>Why heading structure matters</h2>
 <p>Headings (H1 through H6) create the outline of a page. Search engines and AI systems use that outline to understand topics and subtopics. Screen readers rely on it for navigation. A clear hierarchy also helps human readers scan the page.</p>
+<p>The outline also shapes how a page is found and quoted. Search engines use headings to work out what each section is about, and answer engines do the same when they pull a passage into a result. A page with clear, descriptive headings is easier to summarise and easier to link to, because each section has a name. None of this needs clever wording: headings that plainly state what the section covers do the job better than headings written to sound impressive.</p>
 <h2>Common problems this tool catches</h2>
 <ul>
 <li><strong>Missing H1</strong> — every page should have exactly one main H1 that states the primary topic.</li>
@@ -64,11 +65,47 @@
 <li>Fix the flagged issues first: add a missing H1, remove extra H1 tags, then fill in any skipped levels.</li>
 <li>Paste the updated HTML and analyse it again to confirm the outline is clean.</li>
 </ol>
+
+<h2>A worked example: fixing a messy outline</h2>
+<p>Here is an outline the checker might flag on a recipe page, with the problems marked:</p>
+<pre>H1: The Best Chocolate Cake
+H3: Ingredients
+H3: Method
+H2: Why this cake works
+H4: Storage tips</pre>
+<p>The ingredients and method sections jump straight from H1 to H3, skipping H2, and the storage tips jump from H2 to H4. The fix keeps the same words and only changes the levels:</p>
+<pre>H1: The Best Chocolate Cake
+H2: Ingredients
+H2: Method
+H2: Why this cake works
+H3: Storage tips</pre>
+<p>Nothing about the page looks different to a reader, because the visual size of a heading is set by styling, not by its level. But the outline now reads as a clean list: one main topic, three sections, and a subsection where it belongs. Run the checker again after the fix to confirm the flags are gone.</p>
+<h2>Headings are not for styling</h2>
+<p>A common habit is picking a heading level because of how it looks: H3 because it is smaller than H2, or H4 because it fits neatly in a sidebar. That ties the page structure to the design, and it breaks the outline. The level should always follow the structure: a section gets H2, a subsection of that section gets H3, and so on. If an H2 looks too big, change its size in CSS. The heading level describes meaning, and the stylesheet describes appearance. Keeping the two separate is what makes the outline reliable for search engines and screen readers.</p>
+<h2>How to write good heading text</h2>
+<ul>
+<li><strong>Say what the section is about in plain words.</strong> "How to check your outline" beats "A few thoughts".</li>
+<li><strong>Keep headings short enough to scan,</strong> usually one line. A heading that wraps to three lines is doing the paragraph's job.</li>
+<li><strong>Use the words your readers use.</strong> If people search for "how to fix skipped heading levels", a heading with those words in it helps them find the section.</li>
+<li><strong>Do not stuff keywords into every heading.</strong> One clear, honest heading per section is enough, and a page full of repeated phrases reads badly.</li>
+<li><strong>Avoid headings that only make sense in context,</strong> like "More" or "Next steps", when the section could name itself. A reader who jumps straight to that section should know what it covers.</li>
+</ul>
+<p>Good headings work twice: they help a reader who is scanning the page, and they help a search engine that is building a picture of what the page covers.</p>
+<h2>Common heading mistakes on real sites</h2>
+<ul>
+<li><strong>Using the logo or site name as the H1 on every page.</strong> The H1 should describe the page, not the site.</li>
+<li><strong>Putting the main keyword in an H2 and leaving the H1 vague.</strong> The strongest signal on the page should carry the clearest description of the topic.</li>
+<li><strong>Splitting one topic across several H2s with the same text.</strong> Two sections both headed "Features" tell a reader nothing about how they differ.</li>
+<li><strong>Using bold paragraphs instead of headings.</strong> Bold text looks like a heading, but screen readers and search engines cannot see it as one.</li>
+<li><strong>Nesting headings for visual indentation.</strong> Indenting a section is a styling choice; it does not make the section a subsection.</li>
+</ul>
 <h2>Frequently asked questions</h2>
 <details><summary>How many H1 tags should a page have?</summary><p>Exactly one. The H1 should state the main topic of the page and usually matches the title tag. Extra H1 tags dilute that signal, so demote styling-only headings to H2 or lower.</p></details>
 <details><summary>Does skipping a heading level hurt SEO?</summary><p>It can. A jump such as H1 straight to H3 breaks the page outline, which makes the topic structure harder for search engines, AI answer engines and screen readers to follow. Add the missing level instead of skipping it.</p></details>
 <details><summary>Can I check Markdown headings as well as HTML?</summary><p>Yes. If no HTML headings are found, the checker reads Markdown-style headings instead: one hash (#) is H1, two hashes (##) are H2, and so on up to six hashes.</p></details>
 <details><summary>What should I fix first?</summary><p>Start with the H1: add one if it is missing, or keep only one if there are several. Then fix skipped levels, working from the top of the page down, and re-check the outline after each edit.</p></details>
+<details><summary>Should every page have an H2?</summary><p>Most pages should. If a page has only an H1 and long paragraphs, splitting the content into H2 sections makes it easier to scan and gives search engines a clearer outline. Very short pages may not need one.</p></details>
+<details><summary>Do headings directly affect rankings?</summary><p>Headings are a small part of how search engines understand a page, not a ranking trick on their own. Clear headings help because they make the topic structure obvious, but they will not rescue thin or unhelpful content.</p></details>
 <h2>Read the guide</h2>
 <p><a href="../blog/what-is-heading-structure-and-how-to-check-it">What Is Heading Structure and How to Check It</a></p>
 <h2>More free tools</h2>
