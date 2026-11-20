@@ -30,18 +30,61 @@
 <h2>Why this matters in 2027</h2>
 <p>By 2027, more than half of informational searches are expected to be answered directly by AI systems rather than a list of blue links. Content that is structured for extraction — clear answers up front, concrete data, short paragraphs, and quotable statements — is far more likely to appear in those answers. Traditional keyword density still helps discovery, but the final citation decision increasingly depends on how cleanly a passage can be lifted and attributed.</p>
 
+<h2>How the score is calculated</h2>
+<p>The score is built from six factors, adding up to 100:</p>
+<ul>
+<li><strong>Answer-first opening: 25 points.</strong> The first 180 characters give a clear, self-contained answer, or open with a complete statement of the point. A weak or missing opening earns 8 points.</li>
+<li><strong>Numbers and statistics: 20 points.</strong> Three or more specific numbers earns the full 20. One or two numbers earns 12. No numbers at all earns 3.</li>
+<li><strong>Lists and structure: 15 points.</strong> Two or more list items earns 15. One list item earns 8.</li>
+<li><strong>Short paragraphs: 15 points.</strong> Two or more paragraphs with an average under 90 words earns 15. Two or more longer paragraphs earns 7.</li>
+<li><strong>Length balance: 15 points.</strong> Between 150 and 1200 words earns the full 15. Over 80 words earns 8. Shorter text earns 3.</li>
+<li><strong>Question language: 10 points.</strong> At least one question mark in the text earns 10. None earns 4.</li>
+</ul>
+<p>Knowing the weights tells you where the work is. The opening and the numbers are worth 45 points between them, so those two fixes move the score more than anything else.</p>
+
+<h2>Worked example: before and after</h2>
+<p>Here is a weak opening paragraph. Pasted into the checker, it scores 35:</p>
+<pre>Search engine optimization has a long history. Over the years, many people have written about how search works and how websites can improve their visibility. There are many factors involved, and experts often disagree about which ones matter most. This article will explore some of those factors in detail.</pre>
+<p>It is one paragraph with no numbers, no list and no question. Now the same idea rewritten for answer engines. This version scores 93:</p>
+<pre>GEO means making your content easy for AI answer engines to quote. Start with a direct answer in the first 2 sentences, add at least 3 specific numbers, and break the rest into short paragraphs and a list. Pages that follow this pattern often score 70 or higher on this checker.
+
+Here is a simple routine that takes about 30 minutes per page:
+
+- Rewrite the opening so it answers the question in 2 sentences or fewer.
+- Add 3 concrete numbers, such as a year, a count, or a percentage.
+- Split any paragraph longer than 4 lines.
+
+How do you know it worked? Paste the revised text back into the checker and compare the breakdown before and after.</pre>
+<p>What changed? The opening answers the question in the first sentence. The text now has 7 numbers, 3 list items, 4 short paragraphs and a real question. Nothing about the topic changed. Only the structure changed, and the score moved from 35 to 93.</p>
+
+<h2>What a high score does not mean</h2>
+<p>The score is a heuristic, a shortcut based on text patterns that answer engines tend to prefer. It is not a measure of quality, accuracy or authority. A page can score 90 and never be cited, because another site is more authoritative or more up to date. A page can score 60 and still be cited, because it is the best source available for that question. Crawlability, freshness and brand signals all sit outside what this tool can see. Use the score to make good content easier to extract and quote, not as a promise of a citation.</p>
+
+<h2>Common mistakes when optimizing for GEO</h2>
+<ul>
+<li><strong>Opening with background instead of the answer.</strong> History and context belong further down the page. The first two sentences should answer the question.</li>
+<li><strong>Numbers with no context.</strong> "Sales grew" tells an answer engine nothing. "Sales grew 34 percent in 2025" is a statement it can quote.</li>
+<li><strong>One long wall of text.</strong> Long paragraphs are hard to lift cleanly. Short paragraphs and lists give answer engines clear passages to extract.</li>
+<li><strong>Adding a question mark only to gain points.</strong> A question readers genuinely ask works better than a question bolted on for the score. Write the question your reader is already thinking.</li>
+<li><strong>Pasting navigation and footer text with the article.</strong> Menus, sidebars and footers add words and paragraphs that distort the breakdown. Paste the main body text only.</li>
+<li><strong>Rewriting until the text reads like a checklist.</strong> Structure helps, but the page still has to read well for humans. Keep the sentences natural.</li>
+</ul>
+
 <h2>Frequently asked questions</h2>
 <details><summary>Is a high GEO Score a guarantee of being cited?</summary><p>No. The score is a heuristic based on observable text patterns. Authority, crawlability, freshness, and brand signals still matter. A high score simply means the text itself is structured in a way that answer engines prefer.</p></details>
 <details><summary>Does the tool send my content to a server?</summary><p>No. Everything runs in your browser. Your text never leaves your device.</p></details>
 <details><summary>What score should I aim for?</summary><p>70 or higher is a solid target for most informational content. Scores above 85 usually mean the text is already very well structured for AI extraction.</p></details>
 <details><summary>Can I check an entire page?</summary><p>Yes. Paste the main body text. The tool works best on the content that would actually be cited (skip navigation, footers and boilerplate).</p></details>
 
+<details><summary>Why did my score drop after I added more text?</summary><p>Length is scored in bands. Text between 150 and 1200 words earns the full length points, while very long text earns fewer, and longer text can also push the average paragraph length up. If the score drops, split the new text into short paragraphs and check the breakdown to see which factor changed.</p></details>
+<details><summary>Does the checker understand my topic?</summary><p>No. It reads structure only: the opening, numbers, lists, paragraph length, word count and questions. It cannot judge whether the content is accurate, original or expert. A high score means the text is easy to extract and quote, not that it is right.</p></details>
+
 <h2>Read the full guide</h2>
 <p><a href="../blog/how-to-optimize-content-for-geo-success-in-2027">How to Optimize Content for GEO Success in 2027</a></p>
 
 <h2>More free tools</h2>
 <p><a href="ai-readiness-checker">AI Readiness Checker</a> · <a href="readability-score-checker">Readability Score Checker</a> · <a href="schema-markup-generator">Schema Markup Generator</a> · <a href="llms-txt-generator">llms.txt Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a></p>
-</div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a high GEO Score a guarantee of being cited?","acceptedAnswer":{"@type":"Answer","text":"No. The score is a heuristic based on observable text patterns. Authority, crawlability, freshness, and brand signals still matter. A high score simply means the text itself is structured in a way that answer engines prefer."}},{"@type":"Question","name":"Does the tool send my content to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs in your browser. Your text never leaves your device."}},{"@type":"Question","name":"What score should I aim for?","acceptedAnswer":{"@type":"Answer","text":"70 or higher is a solid target for most informational content. Scores above 85 usually mean the text is already very well structured for AI extraction."}},{"@type":"Question","name":"Can I check an entire page?","acceptedAnswer":{"@type":"Answer","text":"Yes. Paste the main body text. The tool works best on the content that would actually be cited (skip navigation, footers and boilerplate)."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>
+</div><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is a high GEO Score a guarantee of being cited?","acceptedAnswer":{"@type":"Answer","text":"No. The score is a heuristic based on observable text patterns. Authority, crawlability, freshness, and brand signals still matter. A high score simply means the text itself is structured in a way that answer engines prefer."}},{"@type":"Question","name":"Does the tool send my content to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs in your browser. Your text never leaves your device."}},{"@type":"Question","name":"What score should I aim for?","acceptedAnswer":{"@type":"Answer","text":"70 or higher is a solid target for most informational content. Scores above 85 usually mean the text is already very well structured for AI extraction."}},{"@type":"Question","name":"Can I check an entire page?","acceptedAnswer":{"@type":"Answer","text":"Yes. Paste the main body text. The tool works best on the content that would actually be cited (skip navigation, footers and boilerplate)."}},{"@type":"Question","name":"Why did my score drop after I added more text?","acceptedAnswer":{"@type":"Answer","text":"Length is scored in bands. Text between 150 and 1200 words earns the full length points, while very long text earns fewer, and longer text can also push the average paragraph length up. If the score drops, split the new text into short paragraphs and check the breakdown to see which factor changed."}},{"@type":"Question","name":"Does the checker understand my topic?","acceptedAnswer":{"@type":"Answer","text":"No. It reads structure only: the opening, numbers, lists, paragraph length, word count and questions. It cannot judge whether the content is accurate, original or expert. A high score means the text is easy to extract and quote, not that it is right."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>
 var $=function(i){return document.getElementById(i)};
 function analyse(){
  var t=$('txt').value.trim();

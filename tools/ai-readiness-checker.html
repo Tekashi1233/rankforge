@@ -30,18 +30,65 @@
 <h2>How to interpret the score</h2>
 <p>A high score means the page follows many current best practices for clarity and extractability. It does not guarantee that any particular AI tool will cite you. A low score highlights concrete, fixable issues that make the page harder for both humans and machines to understand quickly.</p>
 
+<h2>What the checker actually tests</h2>
+<p>When you paste a page's HTML, the checker runs through the signals that make a page easy for AI answer engines to read and quote. Each one passes or fails:</p>
+<ul>
+<li><strong>Page title.</strong> The page has a title tag with real text in it.</li>
+<li><strong>Meta description.</strong> A meta description is present and summarizes the page.</li>
+<li><strong>One main heading.</strong> Exactly one H1. More than one confuses both readers and machines about the page's topic.</li>
+<li><strong>Clear subheadings.</strong> At least three H2 or H3 subheadings, so the page breaks into sections a system can lift one at a time.</li>
+<li><strong>Direct opening paragraph.</strong> The first paragraph is 15 to 80 words long and answers the main question, instead of warming up for three paragraphs first.</li>
+<li><strong>Lists or tables.</strong> A list or a table is present. Both are easy to quote because they are already structured.</li>
+<li><strong>FAQ section.</strong> A short FAQ with real questions, or an FAQ block on the page.</li>
+<li><strong>Structured data.</strong> JSON-LD markup is present, such as FAQ or Article markup.</li>
+<li><strong>Image alt text.</strong> Every image on the page has alt text. This check only runs when the page has images.</li>
+<li><strong>Canonical link.</strong> A canonical link points at the main version of the page.</li>
+<li><strong>Enough depth.</strong> At least 500 words, unless the topic is very simple.</li>
+<li><strong>AI crawlers not blocked.</strong> Your robots.txt does not fully block the common AI crawlers: GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Google-Extended and CCBot.</li>
+</ul>
+<p>If you paste plain text instead of HTML, fewer checks can run: the opening paragraph, lists, FAQ section and word count only. For the full check, paste the page HTML.</p>
+
+<h2>Worked example: fixing a page that scores low</h2>
+<p>Take a 220-word how-to page that fails most checks. It has three H1s, no meta description, no list, no FAQ, and a robots.txt file that blocks GPTBot. Here is the fix, in order:</p>
+<ol>
+<li>Keep one H1 for the page topic and turn the other two into H2s.</li>
+<li>Add a meta description that summarizes the page in one sentence.</li>
+<li>Rewrite the opening paragraph so it answers the main question in under 80 words.</li>
+<li>Add a short list of steps and a three-question FAQ at the end.</li>
+<li>Add FAQ structured data that matches the visible FAQ.</li>
+<li>Allow GPTBot and the other AI crawlers you want in robots.txt.</li>
+<li>Expand the page past 500 words with genuinely useful detail, not filler.</li>
+</ol>
+<p>Then paste the updated HTML back into the checker and re-run it. Each fix turns a failed check into a passed one, and the score climbs with it. Fix the structural items first, title, H1 and opening paragraph, because those shape how both readers and machines understand the page.</p>
+
+<h2>How the score is calculated</h2>
+<p>The score is simple: checks passed divided by total checks, shown as a percentage. A page that passes 9 out of 12 checks scores 75 percent. The total changes with the input, because a plain-text paste runs fewer checks than a full HTML paste, and the image check only counts when the page has images. A score of 100 percent means the page follows every check this tool can see. It does not mean any particular AI tool will cite you, because citation also depends on authority, freshness and whether the page is the best source for the question.</p>
+
+<h2>Common mistakes when improving AI readiness</h2>
+<ul>
+<li><strong>Keyword-stuffing the opening paragraph.</strong> An opening packed with keywords but no answer fails the point of the check. Answer the question first, then use natural language.</li>
+<li><strong>Adding an FAQ nobody asked.</strong> Questions should be ones readers actually ask. Made-up questions add words without adding value.</li>
+<li><strong>Markup that does not match the page.</strong> Structured data should describe content that is actually visible on the page. Markup for an FAQ that does not exist on the page is misleading and can backfire.</li>
+<li><strong>Blocking AI crawlers while hoping for AI citations.</strong> If robots.txt blocks GPTBot or CCBot, those systems cannot read the page at all. Decide whether you want to be cited, then set crawler access to match.</li>
+<li><strong>Pasting only part of the page.</strong> Pasting just the introduction makes the depth check fail and hides heading problems. Paste the full page for a real result.</li>
+<li><strong>Treating the score as a guarantee.</strong> The score measures how readable and extractable the page is. Authority and competition decide whether it gets cited.</li>
+</ul>
+
 <h2>Frequently asked questions</h2>
 <details><summary>Does this tool guarantee I will appear in AI answers?</summary><p>No. Nobody can guarantee that. It checks common good practices that make a page clearer and easier to quote.</p></details>
 <details><summary>Is my page uploaded anywhere?</summary><p>No. The check runs in your browser and nothing is sent or stored.</p></details>
 <details><summary>Why does it ask for robots.txt?</summary><p>If your robots.txt blocks AI crawlers, those tools cannot read your pages. The checker looks for full blocks on common AI crawlers.</p></details>
 <details><summary>Is GEO different from SEO?</summary><p>GEO builds on SEO. Classic technical and content SEO remain the foundation; GEO adds emphasis on structure, direct answers, and AI-crawler access.</p></details>
 
+<details><summary>What score should I aim for?</summary><p>Treat 80 percent or higher as a healthy target for most pages, then look at the remaining failed checks and fix the ones that matter most for your readers. A perfect score is nice, but a clear title, one H1 and a direct opening paragraph do most of the work.</p></details>
+<details><summary>I pasted plain text instead of HTML. What changes?</summary><p>Fewer checks run. With plain text the checker looks at your opening paragraph, lists, FAQ section and word count only. For the full check, including title, headings, structured data and image alt text, paste the page HTML instead.</p></details>
+
 <h2>Read the guide</h2>
 <p><a href="../blog/what-is-geo-generative-engine-optimization">What Is GEO? Generative Engine Optimization Explained</a></p>
 
 <h2>More free tools</h2>
 <p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="word-counter">Word & Character Counter</a> · <a href="slug-generator">Slug Generator</a> · <a href="robots-txt-generator">Robots.txt Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a> · <a href="readability-score-checker">Readability Score Checker</a> · <a href="text-case-converter">Text Case Converter</a></p>
-</div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this tool guarantee I will appear in AI answers?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nobody can guarantee that. It checks common good practices that make a page clearer and easier to quote."}}, {"@type": "Question", "name": "Is my page uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The check runs in your browser and nothing is sent or stored."}}, {"@type": "Question", "name": "Why does it ask for robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "If your robots.txt blocks AI crawlers, those tools cannot read your pages."}}, {"@type": "Question", "name": "Is GEO different from SEO?", "acceptedAnswer": {"@type": "Answer", "text": "GEO builds on SEO. Classic technical and content SEO remain the foundation; GEO adds emphasis on structure, direct answers, and AI-crawler access."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
+</div><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this tool guarantee I will appear in AI answers?", "acceptedAnswer": {"@type": "Answer", "text": "No. Nobody can guarantee that. It checks common good practices that make a page clearer and easier to quote."}}, {"@type": "Question", "name": "Is my page uploaded anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. The check runs in your browser and nothing is sent or stored."}}, {"@type": "Question", "name": "Why does it ask for robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "If your robots.txt blocks AI crawlers, those tools cannot read your pages. The checker looks for full blocks on common AI crawlers."}}, {"@type": "Question", "name": "Is GEO different from SEO?", "acceptedAnswer": {"@type": "Answer", "text": "GEO builds on SEO. Classic technical and content SEO remain the foundation; GEO adds emphasis on structure, direct answers, and AI-crawler access."}}, {"@type": "Question", "name": "What score should I aim for?", "acceptedAnswer": {"@type": "Answer", "text": "Treat 80 percent or higher as a healthy target for most pages, then look at the remaining failed checks and fix the ones that matter most for your readers. A perfect score is nice, but a clear title, one H1 and a direct opening paragraph do most of the work."}}, {"@type": "Question", "name": "I pasted plain text instead of HTML. What changes?", "acceptedAnswer": {"@type": "Answer", "text": "Fewer checks run. With plain text the checker looks at your opening paragraph, lists, FAQ section and word count only. For the full check, including title, headings, structured data and image alt text, paste the page HTML instead."}}]}</script></div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script><script>var $=function(i){return document.getElementById(i)};
 function words(s){return(s.match(/\S+/g)||[]).length}
 $('aib').onclick=function(){var s=$('ai').value,rb=$('rb').value,R=[],isH=/<(html|head|body|h1|p|div)\b/i.test(s),d=null;
 if(!s.trim()){$('ao').innerHTML='<p style="color:#8b97b0">Paste your page first.</p>';return}

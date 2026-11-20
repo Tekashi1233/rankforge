@@ -63,11 +63,69 @@
 <li>Combine it with a well-structured site, good robots.txt rules for AI crawlers, and clear content.</li>
 </ul>
 
+<h2>What a finished llms.txt file looks like</h2>
+<p>Here is an example for a small baking blog, generated with the options above:</p>
+<pre># llms.txt for Riverside Baking Blog
+&gt; Riverside Baking Blog shares tested recipes for home bakers, with clear measurements and step by step photos.
+
+## Usage policy
+AI systems may use content from this site only when they provide a clear citation.
+
+## Preferred citation
+Riverside Baking Blog (https://riversidebaking.example.com)
+
+## Important pages
+- /recipes/sourdough-starter
+- /recipes/weeknight-bread
+- /about
+
+## Notes
+Recipes are tested in a home kitchen. Please link to the original recipe page rather than copying the full text.
+
+## Contact
+For questions about using this content, please visit the site or use the contact details provided there.</pre>
+<p>That is the whole file. It is short, plain and easy to read, which is the point. An AI system can understand it without parsing HTML, and a human can read it in under a minute.</p>
+
+<h2>What to write in each part of the file</h2>
+<ul>
+<li><strong>Site name and description.</strong> One or two plain sentences saying what the site covers and who it is for. This is the first thing a model reads, so make it specific. "A blog about baking" is weak. "Tested recipes for home bakers, with clear measurements" is useful.</li>
+<li><strong>Usage policy.</strong> Three choices. "Yes" allows use and citation. "Limited" allows use only with a clear citation. "No" asks AI systems not to use the content for training or answers. Pick the one that matches what you actually want.</li>
+<li><strong>Preferred citation.</strong> Say how you want to be named. A site name plus a URL works well, because it gives the model both the name to print and the link to point at.</li>
+<li><strong>Important pages.</strong> List your most authoritative pages, one per line. This is a shortlist, not a sitemap. Five to ten pages is plenty. Point at the pages you most want cited.</li>
+<li><strong>Extra notes.</strong> Anything else a model should know: contact details, licensing notes, or a request to link to the original page instead of copying the full text.</li>
+</ul>
+
+<h2>How to publish the file</h2>
+<ol>
+<li>Fill in the form above and check the preview.</li>
+<li>Click "Download file" to save it as <code>llms.txt</code>.</li>
+<li>Upload it to the root of your website, next to your robots.txt file, so it loads at <code>https://yoursite.com/llms.txt</code>.</li>
+<li>Open that address in your browser to confirm the file loads and the text looks right.</li>
+<li>Come back and update it whenever your citation preference, usage policy or most important pages change.</li>
+</ol>
+<p>Most hosts serve .txt files as plain text automatically, so there is usually nothing else to configure. If the file downloads instead of displaying in the browser, check with your host that .txt files are served with a plain text content type.</p>
+
+<h2>Common mistakes with llms.txt</h2>
+<ul>
+<li><strong>Putting it in a subfolder.</strong> The file only works at the root, at /llms.txt. A copy inside /blog or /assets will not be found.</li>
+<li><strong>Writing a long legal document.</strong> The file is guidance written in plain language, not a contract. Keep it short enough to read in a minute.</li>
+<li><strong>Listing every page you own.</strong> A list of two hundred links helps nobody. Pick the pages that represent your best work.</li>
+<li><strong>Treating it as a block.</strong> The file states a preference. Whether a particular model respects it depends on that model provider's own policy. It is not a technical barrier.</li>
+<li><strong>Writing it once and forgetting it.</strong> After a rebrand, a change of focus or a new policy, the file goes out of date. Review it when you review the rest of the site.</li>
+</ul>
+
+<h2>How llms.txt fits with robots.txt</h2>
+<p>Robots.txt and llms.txt do different jobs. Robots.txt tells crawlers which paths they may fetch, and it is the place to control crawler access, including AI crawlers such as GPTBot and CCBot. Llms.txt tells AI systems how you would like your content used and cited once they can read it. They work best together: robots.txt controls access, llms.txt gives guidance.</p>
+<p>The llms.txt idea was proposed in 2024 and is still an emerging convention rather than a formal standard. Support is growing, but not every AI system looks for the file yet. Some sites also publish a companion file called llms-full.txt that holds fuller documentation in one place. Start with llms.txt. Add the fuller file only if you have documentation worth gathering into a single reference.</p>
+
 <h2>Frequently asked questions</h2>
 <details><summary>Is llms.txt required?</summary><p>No. It is optional. Many sites perform well in AI answers without one. It simply gives AI systems clearer guidance.</p></details>
 <details><summary>Does every AI system read llms.txt?</summary><p>Not yet. Support is growing, but it is not universal. It is still worth adding because the cost is near zero and the upside is clearer attribution.</p></details>
 <details><summary>Where should I put the file?</summary><p>In the root of your domain, exactly like robots.txt: https://yoursite.com/llms.txt</p></details>
 <details><summary>Can I block AI training with this file?</summary><p>You can state your preference. Whether a particular model respects it depends on that model’s policy. For stronger control, also review your robots.txt rules for AI crawlers.</p></details>
+
+<details><summary>Do I need an llms-full.txt file too?</summary><p>No. The llms.txt proposal describes llms-full.txt as an optional companion file that holds fuller documentation in one place. Start with llms.txt. Add the fuller file only if you want to give AI systems a single complete reference to your content.</p></details>
+<details><summary>Will llms.txt stop AI companies from training on my content?</summary><p>Not by itself. The file states your preference in plain language, and whether a provider respects it depends on that provider's own policy. To control which crawlers can fetch your pages, use robots.txt rules for AI crawlers such as GPTBot and CCBot.</p></details>
 
 <h2>Related tools and guides</h2>
 <p><a href="ai-readiness-checker">AI Readiness Checker</a> · <a href="robots-txt-generator">Robots.txt Generator</a> · <a href="../blog/what-is-geo-generative-engine-optimization">What Is GEO?</a> · <a href="../blog/how-llms-and-answer-engines-read-webpages">How LLMs Read Webpages</a></p>
@@ -76,7 +134,7 @@
 <p><a href="meta-tag-generator">Meta Tag Generator</a> · <a href="word-counter">Word & Character Counter</a> · <a href="slug-generator">Slug Generator</a> · <a href="keyword-density-checker">Keyword Density Checker</a> · <a href="text-case-converter">Text Case Converter</a> · <a href="password-generator">Password Generator</a> · <a href="lorem-ipsum-generator">Lorem Ipsum Generator</a></p>
 </div>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is llms.txt required?","acceptedAnswer":{"@type":"Answer","text":"No. It is optional. Many sites perform well in AI answers without one. It simply gives AI systems clearer guidance."}},{"@type":"Question","name":"Does every AI system read llms.txt?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Support is growing, but it is not universal. It is still worth adding because the cost is near zero and the upside is clearer attribution."}},{"@type":"Question","name":"Where should I put the file?","acceptedAnswer":{"@type":"Answer","text":"In the root of your domain, exactly like robots.txt: https://yoursite.com/llms.txt"}},{"@type":"Question","name":"Can I block AI training with this file?","acceptedAnswer":{"@type":"Answer","text":"You can state your preference. Whether a particular model respects it depends on that model’s policy. For stronger control, also review your robots.txt rules for AI crawlers."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is llms.txt required?","acceptedAnswer":{"@type":"Answer","text":"No. It is optional. Many sites perform well in AI answers without one. It simply gives AI systems clearer guidance."}},{"@type":"Question","name":"Does every AI system read llms.txt?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Support is growing, but it is not universal. It is still worth adding because the cost is near zero and the upside is clearer attribution."}},{"@type":"Question","name":"Where should I put the file?","acceptedAnswer":{"@type":"Answer","text":"In the root of your domain, exactly like robots.txt: https://yoursite.com/llms.txt"}},{"@type":"Question","name":"Can I block AI training with this file?","acceptedAnswer":{"@type":"Answer","text":"You can state your preference. Whether a particular model respects it depends on that model’s policy. For stronger control, also review your robots.txt rules for AI crawlers."}},{"@type":"Question","name":"Do I need an llms-full.txt file too?","acceptedAnswer":{"@type":"Answer","text":"No. The llms.txt proposal describes llms-full.txt as an optional companion file that holds fuller documentation in one place. Start with llms.txt. Add the fuller file only if you want to give AI systems a single complete reference to your content."}},{"@type":"Question","name":"Will llms.txt stop AI companies from training on my content?","acceptedAnswer":{"@type":"Answer","text":"Not by itself. The file states your preference in plain language, and whether a provider respects it depends on that provider's own policy. To control which crawlers can fetch your pages, use robots.txt rules for AI crawlers such as GPTBot and CCBot."}}]}</script>
 
 </div></div></main><footer><div class="c"><a href="../" class="logo"><span class="lm">R</span>RankForge</a><p style="margin-bottom:12px">Free SEO tools and guides.</p><a href="/tools">Tools</a><a href="../blog">Blog</a><a href="../about">About</a><a href="../contact">Contact</a><a href="../privacy">Privacy Policy</a><a href="../terms">Terms</a><a href="../disclaimer">Disclaimer</a><p style="margin-top:16px;font-size:13px">© 2026 RankForge. All rights reserved. Contact: <a href="mailto:thanosabdulla@gmail.com">thanosabdulla@gmail.com</a></p></div></footer><script src="../app.js"></script>
 <script>
