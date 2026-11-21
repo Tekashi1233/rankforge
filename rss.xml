@@ -5,8 +5,15 @@
     <link>https://rankforgetool.com/blog</link>
     <description>Practical, plain-English guides on SEO, GEO, and browser-based tools from RankForge.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://rankforgetool.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>What Are UTM Parameters and How to Use Them (Without Messing Up Your Analytics)</title>
+      <link>https://rankforgetool.com/blog/what-are-utm-parameters-and-how-to-use-them</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/what-are-utm-parameters-and-how-to-use-them</guid>
+      <description>You share a link, people click, and Analytics calls it all direct. Learn what UTM parameters are, how to build tagged links, and the mistakes to avoid.</description>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Where Base64 Shows Up and What It Does</title>
       <link>https://rankforgetool.com/blog/where-base64-shows-up</link>
