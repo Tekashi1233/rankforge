@@ -88,15 +88,23 @@ nav {
 }
 
 .lm {
-  width: 30px;
+  width: 34px;
   height: 30px;
   border-radius: 9px;
-  background: linear-gradient(135deg, var(--b), #6f9bff);
-  color: #fff;
+  background: #fff;
+  border: 1.5px solid var(--n);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  padding: 3px 4px;
+}
+
+.lm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .nl {
