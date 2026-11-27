@@ -68,10 +68,34 @@
 <li><strong>Mixing conventions</strong>, such as a canonical with a trailing slash on one page and without on the next.</li>
 <li><strong>Canonical and redirect disagreeing.</strong> If page A canonicalises to B but B redirects to A, search engines will ignore both.</li>
 <li><strong>Canonicalising paginated or filtered pages</strong> to page one when the content is genuinely different.</li>
+<li><strong>Canonical chains.</strong> If page A points to B and B points to C, search engines may stop following the chain and pick a version themselves. Point A straight at C.</li>
+<li><strong>Canonical pointing at a dead or redirected URL.</strong> A canonical that targets a 404 page, or a URL that redirects somewhere else, gets ignored. The target must return a 200 status and be the final address.</li>
 <li><strong>Conflicting with hreflang.</strong> Each language version should usually be its own canonical.</li>
 </ul>
 <h2>How to check your canonical</h2>
 <p>View the page source and search for <code>rel="canonical"</code>. Confirm it is absolute, uses HTTPS and your preferred hostname, and matches the URL you actually want indexed. To build a clean tag quickly, paste any URL into RankForge’s <a href="../tools/canonical-url-generator">Canonical URL Generator</a>: it forces HTTPS, lowercases the path, strips tracking parameters, applies your trailing-slash rule and outputs a ready-to-paste tag.</p>
+<h2>The most common duplicate-URL situations</h2>
+<p>Duplicates rarely come from copying a page on purpose. They usually appear because a site serves the same content at several addresses without anyone noticing. These are the ones to watch for:</p>
+<ul>
+<li><strong>Trailing slash.</strong> <code>/blog/my-post</code> and <code>/blog/my-post/</code> are different URLs. Pick one form and canonicalise the other to it.</li>
+<li><strong>www and http versions.</strong> <code>http://example.com</code>, <code>https://www.example.com</code> and <code>https://example.com</code> can all serve the same page. Canonicalise them all to the one version you chose — usually the HTTPS address without www.</li>
+<li><strong>Tracking parameters.</strong> A link shared in a newsletter adds <code>?utm_source=newsletter</code> to the URL. The page is the same, so the tracked version should canonicalise to the clean URL.</li>
+<li><strong>Sort and filter parameters.</strong> A category page with <code>?sort=price</code> or <code>?colour=blue</code> shows the same products in a different order. Canonicalise those variants to the plain category page — unless a filtered view is a page you genuinely want ranked on its own.</li>
+<li><strong>Print and PDF versions.</strong> A printer-friendly page or a PDF of the same article is a copy. Point its canonical at the normal web page.</li>
+<li><strong>Product variants.</strong> A product in three colours may live at three URLs. Canonicalise the variants to the main product page, or give each variant its own self-referencing canonical if you want every colour indexed separately.</li>
+</ul>
+<p>The rule behind all of these is the same: the canonical should point at the version you would share with someone if you could only share one link.</p>
+<h2>Canonical vs redirect vs noindex: which one to use</h2>
+<p>Three tools solve three different problems, and mixing them up is a common mistake.</p>
+<ul>
+<li><strong>301 redirect</strong> — use it when a URL should never be visited again: a page moved, a duplicate you want gone, an old address replaced by a new one. A redirect is an instruction, and it also sends visitors to the right place.</li>
+<li><strong>Canonical tag</strong> — use it when both URLs need to stay live: tracking links, a print version, a product reached through several category paths. A canonical is a hint, not an order, so Google can still choose differently.</li>
+<li><strong>Noindex</strong> — use it when a page is useful to visitors but should never appear in search results: internal search pages, login pages, thank-you pages after a purchase. A noindex page is still crawled; it just is not shown in results.</li>
+</ul>
+<p>Do not stack them carelessly. A page that is noindexed should not also canonicalise to another page and expect its ranking signals to move — search engines are likely to ignore the canonical on a page they are told not to index. Pick one tool per job: redirect to remove, canonical to consolidate, noindex to hide.</p>
+<h2>How to check Google actually honoured your canonical</h2>
+<p>A canonical tag is a hint, so Google sometimes picks a different URL. Check whether it listened in Search Console: open the URL Inspection tool, enter the page, and compare the "User-declared canonical" with the "Google-selected canonical". If they match, the canonical is working. If they differ, something is off — common causes are a canonical pointing at a page that redirects or returns a 404, a canonical placed in the page body instead of the head, or two pages whose content is so different that Google treats them as separate pages rather than duplicates.</p>
+<p>For a whole-site view, use the Page indexing report and look for "Duplicate, Google chose different canonical than user" and "Duplicate without user-selected canonical". The first means your tag was seen but overruled; the second means Google found duplicates you never marked. Fix the first group by checking the canonical target is live and matches the content; fix the second by adding canonicals to the duplicates Google found.</p>
 <h2>Quick fix checklist</h2>
 <ol>
 <li>Choose HTTPS, one hostname, lowercase paths and a trailing-slash rule.</li>
