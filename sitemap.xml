@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rankforgetool.com/</loc><lastmod>2026-11-21</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://rankforgetool.com/tools</loc><lastmod>2026-11-21</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rankforgetool.com/blog</loc><lastmod>2026-11-21</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rankforgetool.com/about</loc><lastmod>2026-11-21</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rankforgetool.com/</loc><lastmod>2026-11-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://rankforgetool.com/tools</loc><lastmod>2026-11-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rankforgetool.com/blog</loc><lastmod>2026-11-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rankforgetool.com/about</loc><lastmod>2026-11-28</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://rankforgetool.com/contact</loc><lastmod>2026-11-06</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://rankforgetool.com/privacy</loc><lastmod>2026-11-20</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://rankforgetool.com/terms</loc><lastmod>2026-11-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
@@ -53,5 +53,7 @@
   <url><loc>https://rankforgetool.com/tools/base64-encoder-decoder</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rankforgetool.com/blog/where-base64-shows-up</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rankforgetool.com/tools/utm-campaign-builder</loc><lastmod>2026-11-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rankforgetool.com/tools/alt-text-checker</loc><lastmod>2026-11-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://rankforgetool.com/blog/what-are-utm-parameters-and-how-to-use-them</loc><lastmod>2026-11-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rankforgetool.com/blog/how-to-write-alt-text-that-helps-seo-and-accessibility</loc><lastmod>2026-11-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

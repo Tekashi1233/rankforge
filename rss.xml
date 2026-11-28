@@ -5,8 +5,15 @@
     <link>https://rankforgetool.com/blog</link>
     <description>Practical, plain-English guides on SEO, GEO, and browser-based tools from RankForge.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://rankforgetool.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How to Write Alt Text That Helps SEO and Accessibility</title>
+      <link>https://rankforgetool.com/blog/how-to-write-alt-text-that-helps-seo-and-accessibility</link>
+      <guid isPermaLink="true">https://rankforgetool.com/blog/how-to-write-alt-text-that-helps-seo-and-accessibility</guid>
+      <description>Alt text is the one line that tells a blind reader and Google what your image shows. Learn how to write it well, with examples and the 125-character rule.</description>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>What Are UTM Parameters and How to Use Them (Without Messing Up Your Analytics)</title>
       <link>https://rankforgetool.com/blog/what-are-utm-parameters-and-how-to-use-them</link>

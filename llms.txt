@@ -1,6 +1,6 @@
 # RankForge
 
-> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator, canonical URL generator, llms.txt generator, URL encoder / decoder, Base64 encoder / decoder and UTM campaign builder. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
+> RankForge provides free browser-based SEO and GEO tools that run entirely on the user's device. No sign-up required. Tools include meta tag generator, headline analyzer, word counter, slug generator, robots.txt generator, keyword density checker, readability score checker, text case converter, password generator, lorem ipsum generator, AI readiness checker, GEO score checker, schema markup generator, XML sitemap generator, heading structure checker, hreflang generator, canonical URL generator, llms.txt generator, URL encoder / decoder, Base64 encoder / decoder, UTM campaign builder and alt text checker. The site also publishes plain-English beginner guides on SEO and Generative Engine Optimization.
 
 RankForge is privacy-first: nothing users type is sent to a server. All tools work on mobile and desktop.
 
@@ -27,6 +27,7 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [URL Encoder / Decoder](https://rankforgetool.com/tools/url-encoder-decoder): Encode or decode any URL or text, including spaces, Arabic, emoji and query strings
 - [Base64 Encoder / Decoder](https://rankforgetool.com/tools/base64-encoder-decoder): Encode text to Base64 or decode it back, with a URL-safe mode
 - [UTM Campaign Builder](https://rankforgetool.com/tools/utm-campaign-builder): Build tagged campaign URLs with utm_source, utm_medium, utm_campaign, utm_term and utm_content, with presets for Google, Facebook, YouTube and email
+- [Alt Text Checker](https://rankforgetool.com/tools/alt-text-checker): Check alt text against the 125-character guideline, or get a suggested alt from a description of the image
 
 ## Guides
 
@@ -55,6 +56,7 @@ RankForge is privacy-first: nothing users type is sent to a server. All tools wo
 - [When URLs Need Encoding (and When They Don't)](https://rankforgetool.com/blog/when-urls-need-encoding): When a URL needs percent-encoding, when it does not, and how to fix it in seconds
 - [Where Base64 Shows Up and What It Does](https://rankforgetool.com/blog/where-base64-shows-up): Where Base64 shows up — email attachments, login headers, image data URLs — and what it does
 - [What Are UTM Parameters and How to Use Them](https://rankforgetool.com/blog/what-are-utm-parameters-and-how-to-use-them): What UTM parameters are, how to build tagged links, and the mistakes that wreck your reports
+- [How to Write Alt Text That Helps SEO and Accessibility](https://rankforgetool.com/blog/how-to-write-alt-text-that-helps-seo-and-accessibility): How to write alt text that works for screen readers and search, with examples and the 125-character guideline
 
 ## Optional
 
